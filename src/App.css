@@ -1,6 +1,12 @@
 .App {
   text-align: center;
+
 }
+
+.body {
+  background-image: url("../src/assets/Q&T-26.jpg");
+  background-color: #cccccc;
+ }
 
 .App-logo {
   height: 40vmin;
