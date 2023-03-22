@@ -14,21 +14,21 @@ function App() {
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     >
-      <MyNavbar />
-      <MyCarousel />
-      {/* Meet your photographer */}
-      <AboutMe />
-      {/* Services i offer */}
-      <Services />
-      {/* Projects + Link to Portfolio*/}
-      {/* Portfolio */}
-      {/* Testimonials */}
-      <Testimonials />
-      {/* FAQ */}
-      {/* Link to contact form */}
-      {/* Footer */}
-      
-
+      <div className='App'>
+        <MyNavbar />
+        <MyCarousel />
+        {/* Meet your photographer */}
+        <AboutMe />
+        {/* Services i offer */}
+        <Services />
+        {/* Projects + Link to Portfolio*/}
+        {/* Portfolio */}
+        {/* Testimonials */}
+        <Testimonials />
+        {/* FAQ */}
+        {/* Link to contact form */}
+        {/* Footer */}
+      </div>
     </ThemeProvider>
   );
 }

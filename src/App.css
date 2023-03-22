@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-
+  background-color: #e3d4c5;
 }
 
 .body {
@@ -41,4 +41,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+#reviewImages{
+  opacity: 0.5;
+}
+
+/************ About Me Banner Css ************/
+.banner {
+  /* border-top: 1px solid rgba(3, 2, 2, 0.5); */
+  margin-top: 0;
+  padding: 40px 0 100px 0;
+  /* background-image: url('./assets/Mia Photo.jpeg'); */
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%);
+}
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  /* background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%); */
+  /* border: 1px solid rgba(3, 2, 2, 0.5); */
+  font-size: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner img {
+  /* animation: updown 3s linear infinite; */
+  width: 80%;
+  height: auto;
+  border-radius: 30%;
+  position: relative;
+}
+
+.banner img:hover{
+  animation: updown 8s linear infinite;
+ 
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
 }
