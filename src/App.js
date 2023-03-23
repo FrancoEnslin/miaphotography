@@ -7,6 +7,7 @@ import { ThemeProvider } from 'react-bootstrap';
 import AboutMe from './Components/AboutMe';
 import Services from './Components/Services';
 import Testimonials from './Components/Testimonials';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         {/* FAQ */}
         {/* Link to contact form */}
         {/* Footer */}
+        <Footer />
       </div>
     </ThemeProvider>
   );

@@ -20,7 +20,7 @@ function MyNavbar() {
                 Weddings
               </NavDropdown.Item>
               <NavDropdown.Item href="#family">Family</NavDropdown.Item>
-              <NavDropdown.Item href="#portfolioShoot">Portfolio Shoot</NavDropdown.Item>
+              <NavDropdown.Item href="#portrait">Portrait Shoot</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#contact">
                 Contact Me

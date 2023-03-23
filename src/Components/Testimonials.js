@@ -10,7 +10,7 @@ function Testimonials() {
     const reviews = ["Reviewng this reveiw than Reviewng this reveiw than Reviewng this reveiw than Reviewng this reveiw than Reviewng this reveiw thanReviewng this reveiw than", "Review 2", "Review 3", "Review 4", "Review 5"]
     return (
 
-        <div style={{ marginBottom: "30px", }} className="App" id='reviews'>
+        <div style={{ marginBottom: "30px", }} className="reviews" id='reviews'>
             {/* <img className="d-block w-60" src={Image3} alt='Background Photo' />
             <div style={{ display: "inline-flex" }}>
                 <h3>Letters of Appreciation</h3>
