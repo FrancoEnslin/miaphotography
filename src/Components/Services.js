@@ -16,18 +16,9 @@ function Services() {
 
     // const navigate = useNavigate()
 
-    
-
-
-
-
-
-
-
-
 
     return (
-        <div style={{ marginTop: "30px", marginBottom: "30px"}} className="App" id='services'>
+        <div  className="App" id='services'>
             <h3>Services I Offer</h3>
             <Container>
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
@@ -92,10 +83,25 @@ function Services() {
                             <Card.Img variant="top" src={Image3} alt='Photo' />
                         </Card>
                     </Col>
-                    
+
                 </Row>
             </Container>
         </div>
+
+
+
+        // // Trying Something New
+        // <div className="main-area">
+        //     <div className="blog-post">
+        //         <p className="date"></p>
+        //         <p className="blog-content">
+        //             Some sample text to demonstrate how these cards will work, including how they truncate long sentences.
+        //         </p>
+        //         <p className="read-more">Hover to read more...</p>
+
+        //     </div>
+
+        // </div>
     )
 }
 

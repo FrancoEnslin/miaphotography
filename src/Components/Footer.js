@@ -18,7 +18,7 @@ export const Footer = () => {
           
           <Col size={12} sm={6}>
             {/* <img src={newLogo} alt="Logo" className="gifLogo" /> */}
-            <p style={{color: 'white'}}>Copyright 2022. All Rights Reserved</p>
+            <p >Copyright 2022. All Rights Reserved</p>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">

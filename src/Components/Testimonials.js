@@ -1,76 +1,70 @@
-import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import React, { Component } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import photo1 from '../assets/K&C-37.jpg'
+import photo2 from '../assets/C&J-174.jpg'
+import photo3 from '../assets/Q&T-26.jpg'
 
-import Image3 from '../assets/Q&T-26.jpg';
 
-
-
-function Testimonials() {
-
-    const reviews = ["Reviewng this reveiw than Reviewng this reveiw than Reviewng this reveiw than Reviewng this reveiw than Reviewng this reveiw thanReviewng this reveiw than", "Review 2", "Review 3", "Review 4", "Review 5"]
+export default class Testimonials extends Component {
+  render() {
     return (
-
-        <div style={{ marginBottom: "30px", }} className="reviews" id='reviews'>
-            {/* <img className="d-block w-60" src={Image3} alt='Background Photo' />
-            <div style={{ display: "inline-flex" }}>
-                <h3>Letters of Appreciation</h3>
-
-                {reviews.map((e) => {
-                    <Carousel fade>
-                        <Carousel.Item interval={3000}>
-                            <Carousel.Caption>
-                                <p>{e}</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
-                })}
-
-            </div> */}
-
-            <Carousel fade>
-
-                <Carousel.Item interval={3000}>
-                    <Carousel.Caption>
-                        <h3>Letters of Appreciation</h3>
-                        <p>{reviews[0]}</p>
-                    </Carousel.Caption>
-                    <img
-                        id='reviewImages'
-                        className="d-block w-100"
-                        src={Image3}
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={3000}>
-                    <img
-                        id='reviewImages'
-                        className="d-block w-100"
-                        style={{ width: "50%", height: 'auto' }}
-                        src={Image3}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Letters of Appreciation</h3>
-                        <p> <p>{reviews[1]}</p></p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={3000}>
-                    <img
-                        id='reviewImages'
-                        className="d-block w-100"
-                        src={Image3}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Letters of Appreciation</h3>
-                        <p> <p>{reviews[2]}</p></p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+      <Carousel
+        showArrows={true}
+        infiniteLoop={true}
+        showThumbs={false}
+        showStatus={false}
+        autoPlay={true}
+        interval={6100}
+      >
+        <div>
+          <img src= {photo1} />
+          <div className="myCarousel">
+            <h3>Shirley Fultz</h3>
+            <h4>Designer</h4>
+            <p>
+              It's freeing to be able to catch up on customized news and not be
+              distracted by a social media element on the same site
+            </p>
+          </div>
         </div>
 
+        <div>
+          <img src={photo2} />
+          <div className="myCarousel">
+            <h3>Daniel Keystone</h3>
+            <h4>Designer</h4>
+            <p>
+              The simple and intuitive design makes it easy for me use. I highly
+              recommend Fetch to my peers.
+            </p>
+          </div>
+        </div>
 
-    )
+        <div>
+          <img src={photo3} />
+          <div className="myCarousel">
+            <h3>Theo Sorel</h3>
+            <h4>Designer</h4>
+            <p>
+              I enjoy catching up with Fetch on my laptop, or on my phone when
+              I'm on the go!
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img src={photo3} />
+          <div className="myCarousel">
+            <h3>Theo Sorel</h3>
+            <h4>Designer</h4>
+            <p>
+              I enjoy catching up with Fetch on my laptop, or on my phone when
+              I'm on the go!
+            </p>
+          </div>
+        </div>
+      </Carousel>
+    );
+  }
 }
-
-export default Testimonials

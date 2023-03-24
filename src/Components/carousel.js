@@ -8,17 +8,14 @@ import Image3 from '../assets/Q&T-26.jpg';
 
 function MyCarousel() {
   return (
-    <Carousel fade>
+    <Carousel fade id='home'>
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src={Image1}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <img
@@ -27,10 +24,7 @@ function MyCarousel() {
           alt="Second slide"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <img
@@ -39,12 +33,7 @@ function MyCarousel() {
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+
       </Carousel.Item>
     </Carousel>
   );
