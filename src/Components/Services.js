@@ -30,22 +30,48 @@ function Services() {
 
 
     return (
-        <div  className="App" id='services'>
+
+        //              <div class="flip-card-inner">
+        //                  <div class="flip-card-front">
+        //                      <img src={Image1} style={{height: "10px", width:"20px"}}/>
+        //                      <p class="title">FLIP CARD</p>
+        //                      <p>Hover Me</p>
+        //                  </div>
+        //                  <div class="flip-card-back">
+        //                      <p class="title">BACK</p>
+        //                      <p>Leave Me</p>
+        //                  </div>
+        //              </div>
+
+        <div className="App" id='services'>
             <h3>Services I Offer</h3>
             <Container>
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
                 {/* Row 1 */}
                 <Row>
                     <Col xs={4} md={4}>
-                        <Card className='Card' id='couples' >
-                            <Card.Body>Couple shoot</Card.Body>
-                            <Card.Img variant="top" src={Image1} alt='Photo' />
-                        </Card>
+                        <div class='flip-card'>
+                            <Card className='Card' id='couples'>
+
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <Card.Body> Couple shoot </Card.Body>
+                                        <Card.Img variant="top" src={Image1} alt='Photo' />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <Card.Body> Couple shoot </Card.Body>
+                                        <p>YO YO YO </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+
+
                     </Col>
                     <Col xs={4} md={4}>
                         <Card className='Card' id='family'>
                             <Card.Body> Family shoot </Card.Body>
-                            <Card.Img variant="top" src={Image2} alt='Photo'  />
+                            <Card.Img variant="top" src={Image2} alt='Photo' />
                         </Card>
                     </Col>
                     <Col xs={4} md={4}>
@@ -66,7 +92,7 @@ function Services() {
                     <Col xs={4} md={4}>
                         <Card className='Card' id='events'>
                             <Card.Body> Events </Card.Body>
-                            <Card.Img variant="top" src={Image2} alt='Photo'  />
+                            <Card.Img variant="top" src={Image2} alt='Photo' />
                         </Card>
                     </Col>
                     <Col xs={4} md={4}>
@@ -77,7 +103,7 @@ function Services() {
                     </Col>
                 </Row>
                 <Row>
-                <Col xs={4} md={4}>
+                    <Col xs={4} md={4}>
                         <Card className='Card' id='formals'>
                             <Card.Body> University formals </Card.Body>
                             <Card.Img variant="top" src={Image3} alt='Photo' />
@@ -118,7 +144,7 @@ function Services() {
 
         // <div class="flip-card"  >
         //     <Row>
-               
+
         //             <div class="flip-card-inner" style={{ display: "inline", marginLeft: "30px" }}>
         //                 <div class="flip-card-front">
         //                     <img src={Image1} style={{height: "10px", width:"20px"}}/>
@@ -130,8 +156,8 @@ function Services() {
         //                     <p>Leave Me</p>
         //                 </div>
         //             </div>
-                
-               
+
+
         //         <div class="flip-card-inner" style={{ display: "inline", marginLeft: "30px" }}>
         //                 <div class="flip-card-front">
         //                     <p class="title">FLIP CARD</p>
@@ -142,7 +168,7 @@ function Services() {
         //                     <p>Leave Me</p>
         //                 </div>
         //             </div>
-                
+
         //         <div class="flip-card-inner" style={{ display: "inline", marginLeft: "30px" }}>
         //                 <div class="flip-card-front">
         //                     <p class="title">FLIP CARD</p>
@@ -198,18 +224,18 @@ function Services() {
         //     </Row>
 
 
-            /* <div class="flip-card">
-                <div class="flip-card-inner" style={{ display: "inline", marginLeft: "30px" }}>
-                    <div class="flip-card-front">
-                        <p class="title">FLIP CARD</p>
-                        <p>Hover Me</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="title">BACK</p>
-                        <p>Leave Me</p>
-                    </div>
+        /* <div class="flip-card">
+            <div class="flip-card-inner" style={{ display: "inline", marginLeft: "30px" }}>
+                <div class="flip-card-front">
+                    <p class="title">FLIP CARD</p>
+                    <p>Hover Me</p>
                 </div>
-            </div> */
+                <div class="flip-card-back">
+                    <p class="title">BACK</p>
+                    <p>Leave Me</p>
+                </div>
+            </div>
+        </div> */
         // </div>
     )
 }
