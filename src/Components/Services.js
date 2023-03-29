@@ -69,40 +69,105 @@ function Services() {
 
                     </Col>
                     <Col xs={4} md={4}>
-                        <Card className='Card' id='family'>
-                            <Card.Body> Family shoot </Card.Body>
-                            <Card.Img variant="top" src={Image2} alt='Photo' />
-                        </Card>
+                        <div class='flip-card'>
+                            <Card className='Card' id='family'>
+
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <Card.Body> Family shoot </Card.Body>
+                                        <Card.Img variant="top" src={Image2} alt='Photo' />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <Card.Body> Family shoot </Card.Body>
+                                        <p>YO YO YO </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+
+
                     </Col>
                     <Col xs={4} md={4}>
-                        <Card className='Card' id='portrait'>
-                            <Card.Body>Portrait shoot </Card.Body>
-                            <Card.Img variant="top" src={Image3} alt='Photo' />
-                        </Card>
+                        <div class='flip-card'>
+                            <Card className='Card' id='portrait'>
+
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <Card.Body> Portait shoot </Card.Body>
+                                        <Card.Img variant="top" src={Image3} alt='Photo' />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <Card.Body> Portrait shoot </Card.Body>
+                                        <p>YO YO YO </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+
+
                     </Col>
                 </Row>
                 {/* Row 2 */}
-                <Row>
+                <Row id='row'>
                     <Col xs={4} md={4}>
-                        <Card className='Card' id='friends' >
-                            <Card.Body>Friendship shoot</Card.Body>
-                            <Card.Img variant="top" src={Image1} alt='Photo' />
-                        </Card>
+                        <div class='flip-card'>
+                            <Card className='Card' id='couples'>
+
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <Card.Body> Couple shoot </Card.Body>
+                                        <Card.Img variant="top" src={Image1} alt='Photo' />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <Card.Body> Couple shoot </Card.Body>
+                                        <p>YO YO YO </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+
+
                     </Col>
                     <Col xs={4} md={4}>
-                        <Card className='Card' id='events'>
-                            <Card.Body> Events </Card.Body>
-                            <Card.Img variant="top" src={Image2} alt='Photo' />
-                        </Card>
+                        <div class='flip-card'>
+                            <Card className='Card' id='family'>
+
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <Card.Body> Family shoot </Card.Body>
+                                        <Card.Img variant="top" src={Image2} alt='Photo' />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <Card.Body> Family shoot </Card.Body>
+                                        <p>YO YO YO </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+
+
                     </Col>
                     <Col xs={4} md={4}>
-                        <Card className='Card' id='matric'>
-                            <Card.Body> Matric dances </Card.Body>
-                            <Card.Img variant="top" src={Image3} alt='Photo' />
-                        </Card>
+                        <div class='flip-card'>
+                            <Card className='Card' id='portrait'>
+
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <Card.Body> Portait shoot </Card.Body>
+                                        <Card.Img variant="top" src={Image3} alt='Photo' />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <Card.Body> Portrait shoot </Card.Body>
+                                        <p>YO YO YO </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+
+
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col xs={4} md={4}>
                         <Card className='Card' id='formals'>
                             <Card.Body> University formals </Card.Body>
@@ -122,7 +187,7 @@ function Services() {
                         </Card>
                     </Col>
 
-                </Row>
+                </Row> */}
             </Container>
         </div>
 
