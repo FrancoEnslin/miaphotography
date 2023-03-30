@@ -129,6 +129,10 @@
     background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%);
 }
 
+/* .Card{
+  margin-top: 10px;
+  margin-bottom: 10px
+} */
 
 #row{
   margin-top: 100px;
@@ -176,7 +180,7 @@ margin-bottom: 100px;
 }
 
 .flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 14px 0 rgba(0,0,0,0.2);
   /* position: absolute;
   display: block;
   flex-direction: column; */

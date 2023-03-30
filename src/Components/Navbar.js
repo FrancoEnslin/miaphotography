@@ -16,10 +16,8 @@ function MyNavbar() {
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="#couples">Couples</NavDropdown.Item>
-              <NavDropdown.Item href="#family">
-                Family Shoots
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#family">Friendship Shoot</NavDropdown.Item>
+              <NavDropdown.Item href="#family">Family Shoots</NavDropdown.Item>
+              <NavDropdown.Item href="#friendship">Friendship Shoot</NavDropdown.Item>
               <NavDropdown.Item href="#portrait">Portrait Shoot</NavDropdown.Item>
               <NavDropdown.Item href="#formals">More...</NavDropdown.Item>
               <NavDropdown.Divider />
