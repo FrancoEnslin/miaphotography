@@ -76,8 +76,6 @@ function Services() {
                                 </div>
                             </Card>
                         </div>
-
-
                     </Col>
                     <Col xs={4} md={4}>
                         <div class='flip-card'>

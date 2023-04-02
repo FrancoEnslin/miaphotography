@@ -1,7 +1,12 @@
 .App {
   text-align: center;
   background-color: #e3d4c5;
+  width: 100%;
   /* background-image: url("../src/assets/Q&T-26.jpg"); */
+}
+
+#root{
+  width: 100%;
 }
  
 .body {
@@ -135,40 +140,35 @@
 } */
 
 #row{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
 }
 
 /* New Card Styling */
 .flip-card {
   /* padding: 150px 0 100px 0; */
   background-color: transparent;
-  width: 190px;
-  height: 254px;
-  width: 100%;
-  height: auto;
-  perspective: 1000px;
+  width: 300px;
+  height: 250px;
+  /* width: 100%;
+  height: auto; */
+  /* perspective: 1000px; */
   font-family: sans-serif;
   /* display: flex;
   flex-direction: row; */
-margin-top: 50px;
-margin-bottom: 100px;
-}
-
-.title {
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: 0;
+  /* margin-top: 50px; */
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .flip-card-inner {
   display: inline-block;
   margin-left: 0px;
-  margin-right: 20px;
+  margin-right: 0px;
+  background-color: transparent;
   /* position: relative; */
-  width: 100%;
-  height: auto;
+  /* width: 300px;
+  height: 250px; */
   text-align: center;
   transition: transform 0.9s;
   transform-style: preserve-3d;
