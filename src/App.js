@@ -15,18 +15,24 @@ function App() {
     <ThemeProvider
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
+      maxBreapont="xl"
     >
-      <div className='App'>
+      <div className='App' >
         <MyNavbar />
         <MyCarousel />
         {/* Meet your photographer */}
         <AboutMe />
         {/* Services i offer */}
         <Services />
-        {/* Projects + Link to Portfolio*/}
-        {/* Portfolio */}
-        {/* Testimonials */}
-        <Testimonials />
+        <div className='backGround'>  
+          
+         
+          {/* Projects + Link to Portfolio*/}
+          {/* Portfolio */}
+          <Testimonials />
+        </div>
+      
+
         {/* FAQ */}
         {/* Link to contact form */}
         <Contact />

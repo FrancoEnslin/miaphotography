@@ -1,18 +1,29 @@
 .App {
   text-align: center;
+  align-items: center;
   background-color: #e3d4c5;
   width: 100%;
-  /* background-image: url("../src/assets/Q&T-26.jpg"); */
+
 }
 
-#root{
+.backGround {
+  background-image: url("../src/assets/Q&T-26.jpg");
+  background-size: 80%;
+  /* object-fit: cover; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+#root {
   width: 100%;
 }
- 
+
 .body {
   background-image: url("../src/assets/Q&T-26.jpg");
   background-color: #cccccc;
- }
+}
 
 .App-logo {
   height: 40vmin;
@@ -44,11 +55,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
+
+/* Carousel Css */
+#home {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
 
 
 
@@ -61,8 +80,9 @@
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%);
+  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -73,6 +93,7 @@
   margin-bottom: 12px;
   display: inline-block;
 }
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -81,6 +102,7 @@
   margin-bottom: 20px;
   display: block;
 }
+
 .banner p {
   color: #000000;
   font-size: 18px;
@@ -97,41 +119,52 @@
   position: relative;
 }
 
-.banner img:hover{
+.banner img:hover {
   animation: updown 8s linear infinite;
- 
+
 }
 
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}  
-.txt-rotate > .wrap {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate>.wrap {
   border-right: 0.08em solid #666;
 }
 
 
 /************ Services Css ************/
-#reviewImages{
+
+/* .row2{
+  visibility: hidden;
+}
+.row3{
+  visibility: hidden;
+} */
+
+#reviewImages {
   opacity: 0.5;
 }
 
-#services{
-    /* border-top: 1px solid rgba(3, 2, 2, 0.5); */
-    margin-top: 0;
-    padding: 40px 0 100px 0;
-    /* background-image: url('./assets/Mia Photo.jpeg'); */
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%);
+#services {
+  /* border-top: 1px solid rgba(3, 2, 2, 0.5); */
+  margin-top: 0;
+  padding: 40px 0 100px 0;
+  /* background-image: url('./assets/Mia Photo.jpeg'); */
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
 }
 
 /* .Card{
@@ -139,7 +172,7 @@
   margin-bottom: 10px
 } */
 
-#row{
+#row {
   /* margin-top: 10px;
   margin-bottom: 10px; */
 }
@@ -179,8 +212,9 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
-  box-shadow: 0 0 14px 0 rgba(0,0,0,0.2);
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
   /* position: absolute;
   display: block;
   flex-direction: column; */
@@ -198,7 +232,7 @@
 
 
 .flip-card-front {
-  color:black;
+  color: black;
 }
 
 .flip-card-back {
@@ -210,11 +244,11 @@
 
 
 /************ Review Css ************/
-.reviews{
+.reviews {
   min-height: 400px;
 
   padding: 0 0 0 0;
-  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%);
+  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -336,6 +370,7 @@
   .carousel.carousel-slider .control-arrow {
     display: none !important;
   }
+
   .myCarousel {
     background: #fafafa;
     margin-top: -9%;
@@ -358,18 +393,22 @@
 
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%);
+  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
   padding: 60px 0 50px 0;
 }
+
 .contact img {
   width: 92%;
 }
+
 .contact h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
   margin-bottom: 30px;
 }
-.contact form input, .contact form textarea {
+
+.contact form input,
+.contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -382,24 +421,31 @@
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
-.contact form input:focus, .contact form textarea:focus {
+
+.contact form input:focus,
+.contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
-.contact form input::placeholder, .contact form textarea::placeholder {
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #0c0c0c;
 }
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
 }
+
 .contact form button {
   font-weight: 700;
   color: #000;
   background-color: #fff;
-  
+
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
@@ -407,13 +453,16 @@
   position: relative;
   transition: 0.3s ease-in-out;
 }
+
 .contact form button span {
   z-index: 1;
   position: relative;
 }
+
 .contact form button:hover {
   color: #fff;
 }
+
 .contact form button::before {
   content: "";
   background: #121212;
@@ -425,6 +474,7 @@
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
+
 .contact form button:hover::before {
   width: 100%;
 }
@@ -432,7 +482,7 @@
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%,  #E3D4C5 111.58%);
+  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -523,6 +573,7 @@
   display: inline-block;
   margin-left: 14px;
 }
+
 .social-icon a {
   width: 42px;
   height: 42px;
@@ -535,6 +586,7 @@
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .social-icon a::before {
   content: "";
   width: 42px;
@@ -543,16 +595,19 @@
   background-color: #ffffff;
   border-radius: 50%;
   transform: scale(0);
-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
+
 .social-icon a:hover::before {
   transform: scale(1);
 }
+
 .social-icon a img {
-width: 40%;
-z-index: 1;
-transition: 0.3s ease-in-out;
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
 }
+
 .social-icon a:hover img {
-filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }

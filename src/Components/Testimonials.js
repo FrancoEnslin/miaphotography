@@ -16,6 +16,7 @@ export default class Testimonials extends Component {
         showStatus={false}
         autoPlay={true}
         interval={6100}
+        
       >
         <div>
           <img src= {photo1} />

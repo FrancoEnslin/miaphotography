@@ -14,6 +14,7 @@ function MyCarousel() {
           className="d-block w-100"
           src={Image1}
           alt="First slide"
+          
         />
 
       </Carousel.Item>

@@ -51,7 +51,7 @@ function Services() {
                 <Row id='row'>
                     <Col xs={4} md={4}>
                         <div class='flip-card'>
-                            <Card className='Card' id='couples'>
+                            <Card className='Card' id='couples' >
 
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
@@ -139,7 +139,7 @@ function Services() {
                     </Col>
                 </Row>
                 {/* Row 2 */}
-                <Row id='row'>
+                <Row id='row' className='row2'>
                     <Col xs={4} md={4}>
                         <div class='flip-card'>
                             <Card className='Card' id='friendship'>
@@ -232,7 +232,7 @@ function Services() {
                     </Col>
                 </Row>
                 {/* Row 3 */}
-                <Row id='row'>
+                <Row id='row' className='row3'>
                     <Col xs={4} md={4}>
                         <div class='flip-card'>
                             <Card className='Card' id='formals'>
