@@ -23,7 +23,7 @@ function App() {
         {/* Meet your photographer */}
         <AboutMe />
         {/* Services i offer */}
-      <h3>Services I offer</h3>
+      <h3 style={{marginTop: "10px"}}>Services I offer</h3>
         <Services />
         <div className='backGround'>  
           {/* Projects + Link to Portfolio*/}
