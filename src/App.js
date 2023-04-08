@@ -23,16 +23,13 @@ function App() {
         {/* Meet your photographer */}
         <AboutMe />
         {/* Services i offer */}
+      <h3>Service I offer</h3>
         <Services />
         <div className='backGround'>  
-          
-         
           {/* Projects + Link to Portfolio*/}
           {/* Portfolio */}
           <Testimonials />
         </div>
-      
-
         {/* FAQ */}
         {/* Link to contact form */}
         <Contact />
