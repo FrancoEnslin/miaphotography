@@ -11,6 +11,12 @@ import Footer from './Components/Footer';
 import Contact from './Components/ContactMe';
 
 function App() {
+
+  const mql = window.matchMedia('(max-width: 600px)');
+
+  let mobileView = mql.matches;
+
+
   return (
     <ThemeProvider
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
@@ -20,19 +26,30 @@ function App() {
       <div className='App' >
         <MyNavbar />
         <MyCarousel />
-        {/* Meet your photographer */}
         <AboutMe />
-        {/* Services i offer */}
-      <h3 style={{marginTop: "10px"}}>Services I offer</h3>
+
+        <h3 style={{ marginTop: "10px" }}>Services I offer</h3>
         <Services />
-        <div className='backGround'>  
-          {/* Projects + Link to Portfolio*/}
-          {/* Portfolio */}
-          <Testimonials />
-        </div>
+        {
+          mobileView ?
+            <div>
+              {console.log("I'm in Mobile view")}
+              <div className='backGround'>
+                <Testimonials />
+              </div>
+              <Contact />
+            </div>
+
+            :
+            <div>
+              <div className='backGround'>
+                <Testimonials />
+                <Contact />
+              </div>
+            </div>
+        }
         {/* FAQ */}
         {/* Link to contact form */}
-        <Contact />
         {/* Footer */}
         <Footer />
       </div>

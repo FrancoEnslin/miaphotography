@@ -29,7 +29,7 @@ function Services() {
     ];
 
     return (
-        <div className="App" id='services'>
+        <div  id='services'>
             {/* <h3>Services I offer</h3> */}
             <Container>
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
