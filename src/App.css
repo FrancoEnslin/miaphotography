@@ -70,7 +70,7 @@
 .banner {
   /* border-top: 1px solid rgba(3, 2, 2, 0.5); */
   margin-top: 0;
-  padding: 40px 0 0 0;
+  padding: 40px 0 20px 0;
   /* background-image: url('./assets/Mia Photo.jpeg'); */
   background-position: top center;
   background-size: cover;
@@ -90,7 +90,7 @@
 }
 
 .banner h1 {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -140,15 +140,15 @@
 
 /************ Services Css ************/
 
-/* .row2{
-  visibility: hidden;
-}
-.row3{
-  visibility: hidden;
-} */
-
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+  /* .row2{
+    visibility: hidden;
+  } */
+  /* .row3{
+    visibility: hidden;
+  } */
 
   .App {
     text-align: center;
@@ -167,6 +167,7 @@
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-inline: -10px;
     background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
   }
 
@@ -255,6 +256,32 @@
   transform: rotateY(180deg);
 }
 
+.services button {
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+
+  padding: 6px 20px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.services button span {
+  z-index: 1;
+  position: relative;
+}
+
+.services button:hover {
+  color: rgb(17, 17, 17);
+}
+
+.services button:hover::before {
+  width: 100%;
+}
+
 /* New Card Styling End */
 
 
@@ -262,11 +289,14 @@
 
 .backGround {
   background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
+  border-radius: 10px;
   background-size: 100%;
   object-fit: cover;
   position: relative;
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto
+  height: auto;
+
 }
 
 .reviews {

@@ -30,7 +30,7 @@ function App() {
 
         <h3 style={{ marginTop: "10px" }}>Services I offer</h3>
         <Services />
-        {
+        {/* {
           mobileView ?
             <div>
               {console.log("I'm in Mobile view")}
@@ -38,6 +38,7 @@ function App() {
                 <Testimonials />
               </div>
               <Contact />
+              <Footer />
             </div>
 
             :
@@ -46,11 +47,14 @@ function App() {
                 <Testimonials />
                 <Contact />
               </div>
+              <Footer />
             </div>
-        }
-        {/* FAQ */}
-        {/* Link to contact form */}
-        {/* Footer */}
+        } */}
+        <div className='backGround'>
+           <Testimonials />
+        </div>
+       
+        <Contact />
         <Footer />
       </div>
     </ThemeProvider>

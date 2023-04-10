@@ -26,9 +26,6 @@ function AboutMe() {
                         </Col>
                     </Row>
                 </Container>
-
-
-
             </section>
         </div>
 
