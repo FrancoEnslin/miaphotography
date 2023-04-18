@@ -9,6 +9,7 @@ import Services from './Components/Services';
 import Testimonials from './Components/Testimonials';
 import Footer from './Components/Footer';
 import Contact from './Components/ContactMe';
+import Slider from './Components/Slider';
 
 function App() {
 
@@ -26,10 +27,12 @@ function App() {
       <div className='App' >
         <MyNavbar />
         <MyCarousel />
+        
         <AboutMe />
-
+        {/* <Slider /> */}
         <h3 style={{ marginTop: "10px" }}>Services I offer</h3>
         <Services />
+
         {/* {
           mobileView ?
             <div>
@@ -50,7 +53,7 @@ function App() {
               <Footer />
             </div>
         } */}
-        <div className='backGround'>
+        <div className='backGround' >
            <Testimonials />
         </div>
        

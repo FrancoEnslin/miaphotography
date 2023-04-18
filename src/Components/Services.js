@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Photo from '../assets/Mia Photo.jpeg'
 import { useNavigate } from 'react-router';
+import 'animate.css'
 
 //Images
 import Image1 from '../assets/C&J-174.jpg';
@@ -50,18 +51,16 @@ function Services() {
             <Container>
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
                 {/* Row 1 */}
-                <Row id='row'>
-                    <Col xs={4} md={4}>
+                <Row id='row' >
+                    <Col xs={4} md={4} >
                         <div class='flip-card'>
                             <Card className='Card' id='couples' >
-
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <Card.Body> Couple shoot </Card.Body>
                                         <Card.Img variant="top" src={Image1} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
-                                        {/* <Card.Body> Couple shoot </Card.Body> */}
                                         <p>Option 1</p>
                                         <p>
                                             30 minute session
@@ -79,10 +78,9 @@ function Services() {
                             </Card>
                         </div>
                     </Col>
-                    <Col xs={4} md={4}>
+                    <Col xs={4} md={4} className='text-center'>
                         <div class='flip-card'>
                             <Card className='Card' id='family'>
-
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <Card.Body> Family shoot </Card.Body>
@@ -107,13 +105,10 @@ function Services() {
                                 </div>
                             </Card>
                         </div>
-
-
                     </Col>
-                    <Col xs={4} md={4}>
+                    <Col xs={4} md={4} className='text-center'>
                         <div class='flip-card'>
                             <Card className='Card' id='portrait'>
-
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <Card.Body> Portait shoot </Card.Body>
@@ -136,10 +131,9 @@ function Services() {
                                 </div>
                             </Card>
                         </div>
-
-
                     </Col>
                 </Row>
+
                 {
                     seeMoreClicked ?
                         <div>
@@ -148,7 +142,7 @@ function Services() {
                                     <div class='flip-card'>
                                         <Card className='Card' id='friendship'>
 
-                                            <div class="flip-card-inner">
+                                            <div class="flip-card-inner" >
                                                 <div class="flip-card-front">
                                                     <Card.Body> Friendship shoot </Card.Body>
                                                     <Card.Img variant="top" src={Image1} alt='Photo' />

@@ -16,13 +16,12 @@ export default class Testimonials extends Component {
         showStatus={false}
         autoPlay={true}
         interval={6100}
-        
       >
         <div id="Testimonials">
-          <img src= {photo1} />
+          
           <div className="myCarousel">
             <h3>Shirley Fultz</h3>
-            <h4>Designer</h4>
+            
             <br />
             {/* <br /> */}
             <p>
@@ -33,10 +32,10 @@ export default class Testimonials extends Component {
         </div>
 
         <div>
-          <img src={photo2} />
+          
           <div className="myCarousel">
             <h3>Daniel Keystone</h3>
-            <h4>Designer</h4>
+            
             <br />
             <p>
               The simple and intuitive design makes it easy for me use. I highly
@@ -46,10 +45,10 @@ export default class Testimonials extends Component {
         </div>
 
         <div>
-          <img src={photo3} />
+          
           <div className="myCarousel">
             <h3>Theo Sorel</h3>
-            <h4>Designer</h4>
+            
             <br />
             <p>
               I enjoy catching up with Fetch on my laptop, or on my phone when
@@ -59,10 +58,10 @@ export default class Testimonials extends Component {
         </div>
 
         <div>
-          <img src={photo3} />
+          
           <div className="myCarousel">
             <h3>Theo Sorel</h3>
-            <h4>Designer</h4>
+            
             <br />
             <p>
               I enjoy catching up with Fetch on my laptop, or on my phone when

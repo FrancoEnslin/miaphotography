@@ -8,13 +8,13 @@ import Image3 from '../assets/Q&T-26.jpg';
 
 function MyCarousel() {
   return (
-    <Carousel fade id='home'>
+    <Carousel fade id='home' className='CCarousel'>
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src={Image1}
           alt="First slide"
-          
+          max-height="700px"
         />
 
       </Carousel.Item>
