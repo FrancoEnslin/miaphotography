@@ -52,7 +52,7 @@ function Services() {
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}
                 {/* Row 1 */}
                 <Row id='row' >
-                    <Col xs={4} md={4} >
+                    <Col xs={4} md={4} className='d-flex justify-content-center' >
                         <div class='flip-card'>
                             <Card className='Card' id='couples' >
                                 <div class="flip-card-inner">
@@ -78,7 +78,7 @@ function Services() {
                             </Card>
                         </div>
                     </Col>
-                    <Col xs={4} md={4} className='text-center'>
+                    <Col xs={4} md={4}  className='d-flex justify-content-center'>
                         <div class='flip-card'>
                             <Card className='Card' id='family'>
                                 <div class="flip-card-inner">
@@ -106,7 +106,7 @@ function Services() {
                             </Card>
                         </div>
                     </Col>
-                    <Col xs={4} md={4} className='text-center'>
+                    <Col xs={4} md={4} className='d-flex justify-content-center' >
                         <div class='flip-card'>
                             <Card className='Card' id='portrait'>
                                 <div class="flip-card-inner">
@@ -138,7 +138,7 @@ function Services() {
                     seeMoreClicked ?
                         <div>
                             <Row id='SecondRow' className='row2' style={mobileView ? { marginBottom: "10px" } : { marginBottom: "0px" }}>
-                                <Col xs={4} md={4}>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
                                     <div class='flip-card'>
                                         <Card className='Card' id='friendship'>
 
@@ -169,7 +169,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col xs={4} md={4}>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
                                     <div class='flip-card'>
                                         <Card className='Card' id='events'>
 
@@ -197,7 +197,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col xs={4} md={4}>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
                                     <div class='flip-card'>
                                         <Card className='Card' id='matric'>
 
@@ -231,7 +231,7 @@ function Services() {
                             </Row>
 
                             <Row id='row3' className='row3'>
-                                <Col xs={4} md={4}>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
                                     <div class='flip-card'>
                                         <Card className='Card' id='formals'>
 
@@ -269,7 +269,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col xs={4} md={4}>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
                                     <div class='flip-card'>
                                         <Card className='Card' id='graduations'>
 
@@ -300,7 +300,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col xs={4} md={4}>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
                                     <div class='flip-card'>
                                         <Card className='Card' id='engagements'>
 
