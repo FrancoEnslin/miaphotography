@@ -46,7 +46,7 @@ function Services() {
     ];
 
     return (
-        <div id='services' className='services'>
+        <div id='Services' className='services'>
             {/* <h3>Services I offer</h3> */}
             <Container>
                 {/* Stack the columns on mobile by making one full-width and the other half-width */}

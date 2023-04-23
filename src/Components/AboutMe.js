@@ -8,7 +8,7 @@ import Photo from '../assets/Mia Photo.jpeg'
 
 function AboutMe() {
     return (
-        <div id='about'>
+        <div id='About'>
             <section className='banner' id='home'>
                 <Container >
                     <Row className='align-items-center'>
