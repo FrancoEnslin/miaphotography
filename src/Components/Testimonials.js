@@ -1,75 +1,100 @@
-import React, { Component } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import photo1 from '../assets/K&C-37.jpg'
-import photo2 from '../assets/C&J-174.jpg'
-import photo3 from '../assets/Q&T-26.jpg'
+import React, { useRef, useEffect, useState } from "react";
+const TESTIMONIAL_DELAY = 3000;
 
 
-export default class Testimonials extends Component {
-  render() {
-    return (
-      <Carousel
-        showArrows={true}
-        infiniteLoop={true}
-        showThumbs={false}
-        showStatus={false}
-        autoPlay={true}
-        interval={6100}
-      >
-        <div id="Testimonials">
-          
-          <div className="myCarousel">
-            <h3>Shirley Fultz</h3>
-            
-            <br />
-            {/* <br /> */}
-            <p>
-              It's freeing to be able to catch up on customized news and not be
-              distracted by a social media element on the same site
-            </p>
-          </div>
-        </div>
+const Testimonials = (props) => {
+  const { testimonialData } = props;
+  const refFeedbackParentDiv = useRef(null);
+  const refButtonsParentDiv = useRef(null);
+  const timeoutRef = useRef(null);
+  const [delay, setDelay] = useState(100);
+  const [index, setIndex] = useState(0);
 
-        <div>
-          
-          <div className="myCarousel">
-            <h3>Daniel Keystone</h3>
-            
-            <br />
-            <p>
-              The simple and intuitive design makes it easy for me use. I highly
-              recommend Fetch to my peers.
-            </p>
-          </div>
-        </div>
+  useEffect(() => setDelay(TESTIMONIAL_DELAY), []);
 
-        <div>
-          
-          <div className="myCarousel">
-            <h3>Theo Sorel</h3>
-            
-            <br />
-            <p>
-              I enjoy catching up with Fetch on my laptop, or on my phone when
-              I'm on the go!
-            </p>
-          </div>
-        </div>
-
-        <div>
-          
-          <div className="myCarousel">
-            <h3>Theo Sorel</h3>
-            
-            <br />
-            <p>
-              I enjoy catching up with Fetch on my laptop, or on my phone when
-              I'm on the go!
-            </p>
-          </div>
-        </div>
-      </Carousel>
+  useEffect(() => {
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === props.testimonialData.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
     );
-  }
-}
+
+    return () => clearTimeout(timeoutRef.current);
+  }, [props.testimonialData.length, index, delay]);
+
+  const dotsHelper = (idx) => {
+    if (refButtonsParentDiv.current === null) return;
+
+    if (index === idx) {
+      const arr2 = [...refFeedbackParentDiv.current.children];
+
+      arr2.forEach((el, i) => {
+        if (document.querySelector(`.feedbackText--${i}`))
+          document
+            .querySelector(`.feedbackText--${i}`)
+            .classList.add("not-visible");
+      });
+
+      arr2[index + 1].classList.remove("not-visible");
+
+      return "myDot--active";
+    }
+  };
+
+  const dotClickHandler = (arr, indx) => {
+    setIndex(indx);
+    arr.forEach((_, i) => {
+      document
+        .querySelector(`.feedbackText--${i}`)
+        .classList.add("not-visible");
+      document
+        .querySelector(`.buttonDot${i}`)
+        .classList.remove("myDot--active");
+    });
+    document
+      .querySelector(`.feedbackText--${indx}`)
+      .classList.remove("not-visible");
+    document
+      .querySelector(`.buttonDot${indx}`)
+      .classList.add("myDot--active");
+  };
+
+  return (
+    <div className="section-three-main-div testimonial">
+      <div ref={refFeedbackParentDiv} className="section-three-sub-div-one">
+        <div className="quotes-img quotes-img-right" />
+        {testimonialData.map((el, i) => {
+          return (
+            <div
+              key={i}
+              className={`feedbackText--${i} main-quotes-div not-visible`}
+            >
+              <div className="para">{el.testimonial}</div>
+              <div className="subText">{el.author}</div>
+            </div>
+          );
+        })}
+        <div className="quotes-img quotes-img-left" />
+      </div>
+      <div ref={refButtonsParentDiv}>
+        {testimonialData.map((_, i, arr) => {
+          return (
+            <div
+              name="change testimonial"
+              key={i}
+              className={`buttonDot${i} myDot ${
+                index === i ? dotsHelper(i) : ""
+              }`}
+              onClick={() => dotClickHandler(arr, i)}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default React.memo(Testimonials);
+

@@ -10,6 +10,7 @@ import Testimonials from './Components/Testimonials';
 import Footer from './Components/Footer';
 import Contact from './Components/ContactMe';
 import Slider from './Components/Slider';
+import data from './data.json';
 
 function App() {
 
@@ -53,10 +54,10 @@ function App() {
               <Footer />
             </div>
         } */}
-        <div className='backGround' >
-           <Testimonials />
-        </div>
-       
+        {/* <div className='backGround' >
+             <Testimonials testimonialData={data}/>
+        </div> */}
+        <Testimonials testimonialData={data}/>
         <Contact />
         <Footer />
       </div>

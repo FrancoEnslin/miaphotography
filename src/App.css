@@ -3,68 +3,25 @@
   align-items: center;
   /* background-color: #e3d4c5; */
   background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
-width: 100%;
+  width: 100%;
 }
 
 
 /* Large desktop */
-@media (min-width: 1200px) {
-
-
-}
+@media (min-width: 1200px) {}
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
-
-}
+@media (min-width: 768px) and (max-width: 979px) {}
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-
-
-}
+@media (max-width: 767px) {}
 
 .body {
   background-image: url("../src/assets/Q&T-26.jpg");
   background-color: #cccccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Carousel Css */
 #home {
@@ -76,6 +33,7 @@ width: 100%;
   min-width: auto */
 
 }
+
 .CCarousel img {
   max-height: 790px;
   min-width: auto;
@@ -131,23 +89,6 @@ width: 100%;
   position: relative;
 }
 
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
-.txt-rotate>.wrap {
-  border-right: 0.08em solid #666;
-}
 
 
 /************ Services Css ************/
@@ -238,7 +179,7 @@ width: 100%;
 
 
 /************ Testimonial Css ************/
-.backGround {
+/* .backGround {
   background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
   border-radius: 10px;
   background-size: cover;
@@ -247,7 +188,6 @@ width: 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
-  min-height: 450px;
 }
 
 .carousel-root {
@@ -257,7 +197,6 @@ width: 100%;
 }
 
 .carousel .slide {
-  /* background: #fff !important; */
   background: transparent !important;
   color: black;
   height: 100%;
@@ -269,7 +208,6 @@ width: 100%;
 }
 
 .myCarousel {
-  /* background: #fafafa; */
   background-color: transparent;
   margin-top: 10px;
   width: 60%;
@@ -291,7 +229,7 @@ width: 100%;
 }
 
 .myCarousel h3 {
-  color: rgb(253, 251, 251);
+  color: rgb(245, 40, 40);
   margin-top: 15px;
   font-weight: 100;
   letter-spacing: 0.2px;
@@ -336,7 +274,7 @@ width: 100%;
 }
 
 
-/* Carousel on laptop screens */
+
 @media only screen and (max-width: 934px) {
   .carousel-root {
     outline: 0;
@@ -372,15 +310,16 @@ width: 100%;
     background-image: none;
     padding: 60px 0 50px 0;
   }
-}
+} */
 
 /************ Contact Css ************/
 
-.main-contact{
+.main-contact {
   display: flex;
   flex-direction: row;
-  
+
 }
+
 .contact {
   flex-direction: column;
   padding: 60px 0 50px 0;
@@ -418,19 +357,19 @@ width: 100%;
 .contact form input:focus,
 .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
-  color:rgb(7, 7, 7);
+  color: rgb(7, 7, 7);
 }
 
 .contact form input::placeholder,
 .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color:white;
+  color: white;
 }
 
 .contact form input:focus::placeholder,
 .contact form textarea:focus::placeholder {
-  color:white;
+  color: white;
   opacity: 0.8;
 }
 
@@ -606,7 +545,142 @@ width: 100%;
 }
 
 
-@media only screen and (max-width: 934px) {
+/* New Testimonial Styling */
+.section-three-main-div {
+  background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  row-gap: 1rem;
+  /* background-color: rgb(250, 251, 253); */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.quotes-img-right {
+  justify-self: end;
+  background-image: url(../src/assets/right.png);
+  margin-right: 20px;
+}
+
+.quotes-img-left {
+  background-image: url(../src/assets/left.png);
+  margin-left: 20px;
+}
+
+.section-three-sub-div-one {
+
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-quotes-div {
+  /* width: 1110px; */
+  transition: 1s;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.quotes-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 23px;
+}
+
+/* ------------------ */
+.para {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.subText {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #999999;
+}
+
+.myDot {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 5.5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+  background: rgb(130, 126, 119);
+}
+
+.myDot--active {
+  background: rgb(24, 24, 21);
+}
+
+.not-visible {
+  opacity: 0;
+  transition: 1s;
+}
+
+@media (max-width: 767px) {
+
+  .section-three-sub-div-one {
+    grid-template-columns: 15% 1fr 15%;
+  }
+}
+
+/********************* Mobile Styling *****************/
+
+/* Import back into Mobile Styling */
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+  .App {
+    text-align: center;
+    align-items: center;
+    background-color: #e3d4c5;
+    width: 100%;
+  }
+
+
+  .section-three-main-div {
+    background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    justify-items: center;
+    row-gap: 1rem;
+    /* background-color: rgb(250, 251, 253); */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .backGround {
+    background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
+    border-radius: 10px;
+    /* background-size: cover; */
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+  }
+
   .carousel-root {
     outline: 0;
     width: 93% !important;
@@ -618,8 +692,7 @@ width: 100%;
   }
 
   .myCarousel {
-    /* background: #fafafa; */
-    background: transparent;
+
     margin-top: -9%;
     width: 88%;
     margin-left: auto;
@@ -643,39 +716,6 @@ width: 100%;
     padding: 60px 0 50px 0;
   }
 
-  /************ Contact Css ************/
-
-
-}
-
-/********************* Mobile Styling *****************/
-
-/* Import back into Mobile Styling */
-
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-
-  .App {
-    text-align: center;
-    align-items: center;
-    background-color: #e3d4c5;
-    width: 100%;
-  }
-
-  .backGround {
-  background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  min-height: 250px;
-}
-
-
   #services {
     display: flex;
     flex-direction: row;
@@ -691,7 +731,7 @@ width: 100%;
 
   .flip-card {
     background-color: transparent;
-    width: 300px ;
+    width: 300px;
     height: 250px;
     margin-left: 50px;
     margin-right: 10px;
@@ -699,12 +739,12 @@ width: 100%;
     margin-bottom: 15px;
     align-items: center;
   }
-  
+
 
   .contact {
     padding: 60px 0 50px 0;
   }
-  
+
   .contact img {
     visibility: hidden;
     width: 80%;
@@ -712,14 +752,14 @@ width: 100%;
     border-radius: 30%;
     position: relative;
   }
-  
+
   .contact h2 {
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 30px;
     color: white;
   }
-  
+
   .contact form input,
   .contact form textarea {
     width: 100%;
@@ -734,31 +774,31 @@ width: 100%;
     letter-spacing: 0.8px;
     transition: 0.3s ease-in-out;
   }
-  
+
   .contact form input:focus,
   .contact form textarea:focus {
     background: rgba(255, 255, 255, 1);
-    color:rgb(7, 7, 7);
+    color: rgb(7, 7, 7);
   }
-  
+
   .contact form input::placeholder,
   .contact form textarea::placeholder {
     font-size: 16px;
     font-weight: 400;
-    color:white;
+    color: white;
   }
-  
+
   .contact form input:focus::placeholder,
   .contact form textarea:focus::placeholder {
-    color:white;
+    color: white;
     opacity: 0.8;
   }
-  
+
   .contact form button {
     font-weight: 700;
     color: #000;
     background-color: #fff;
-  
+
     padding: 14px 48px;
     font-size: 18px;
     margin-top: 25px;
@@ -766,16 +806,16 @@ width: 100%;
     position: relative;
     transition: 0.3s ease-in-out;
   }
-  
+
   .contact form button span {
     z-index: 1;
     position: relative;
   }
-  
+
   .contact form button:hover {
     color: #fff;
   }
-  
+
   .contact form button::before {
     content: "";
     background: #121212;
@@ -787,9 +827,142 @@ width: 100%;
     z-index: 0;
     transition: 0.3s ease-in-out;
   }
-  
+
   .contact form button:hover::before {
     width: 100%;
-  } 
+  }
 
+}
+
+/* 
+Importing old Testimonial CSS */
+
+.carousel-root {
+  width: 64% !important;
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+.carousel .slide {
+  background: #fff !important;
+  color: black;
+  height: 100%;
+}
+
+.carousel .slide img {
+  width: 139px !important;
+  border-radius: 50%;
+}
+
+.myCarousel {
+  background: #fafafa;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #ddd;
+  height: 286px;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 5% !important;
+}
+
+.myCarousel h3 {
+  color: #222;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: #787878;
+  font-size: 14px;
+}
+
+.myCarousel p {
+  font-weight: 100 !important;
+  line-height: 29px !important;
+  color: #222;
+  font-size: 15px;
+  font-family: sans-serif;
+  max-height: 67px;
+}
+
+.myCarousel p:before {
+  content: "“";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: "”";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #454545 !important;
+  outline: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: #000 !important;
+  height: 50px !important;
+  position: absolute;
+  top: 35% !important;
+}
+
+.App {
+  text-align: center;
+}
+
+@media only screen and (max-width: 934px) {
+  .carousel-root {
+    outline: 0;
+    width: 93% !important;
+    margin: auto !important;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  }
+
+  .myCarousel {
+    background: #fafafa;
+    margin-top: -9%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    padding-bottom: 12.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    height: 269px;
+  }
+
+  .carousel .slide img {
+    width: 24% !important;
+    border-radius: 50%;
+  }
 }
