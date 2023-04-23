@@ -11,12 +11,22 @@ import Footer from './Components/Footer';
 import Contact from './Components/ContactMe';
 import Slider from './Components/Slider';
 import data from './data.json';
+import Image1 from './assets/C&J-174.jpg'
+import Image2 from './assets/K&C-37.jpg'
+import Image3 from './assets/Q&T-26.jpg'
+import Hero from './Components/carousel';
 
 function App() {
 
   const mql = window.matchMedia('(max-width: 600px)');
 
   let mobileView = mql.matches;
+
+  const images = [
+    Image1, Image2, Image3,
+  ];
+  const interval = 5000;
+  const menuItems = ['Home', 'About', 'Services', 'Contact'];
 
 
   return (
@@ -26,8 +36,9 @@ function App() {
       maxBreapont="xl"
     >
       <div className='App' >
-        <MyNavbar />
-        <MyCarousel />
+        {/* <MyNavbar />
+        <MyCarousel /> */}
+        <Hero images={images} interval={interval} menuItems={menuItems} />
         
         <AboutMe />
         {/* <Slider /> */}
