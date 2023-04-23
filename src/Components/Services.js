@@ -169,7 +169,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='events'>
 
@@ -197,7 +197,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='matric'>
 
@@ -231,7 +231,7 @@ function Services() {
                             </Row>
 
                             <Row id='row3' className='row3'>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='formals'>
 
@@ -269,7 +269,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='graduations'>
 
@@ -300,7 +300,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
+                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='engagements'>
 
