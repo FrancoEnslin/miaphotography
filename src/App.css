@@ -8,7 +8,22 @@
 
 
 /* Large desktop */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  /* .flip-card {
+    padding-bottom: 10%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    align-items: center;
+  } */
+}
+
+@media (min-width: 990px) {
+
+}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {}
@@ -246,7 +261,8 @@ body {
 
   padding: 6px 20px;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   border-radius: 15px;
   position: relative;
   transition: 0.3s ease-in-out;

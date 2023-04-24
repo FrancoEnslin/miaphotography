@@ -42,7 +42,7 @@ export default function Contact() {
         <div className='main-contact'>
             <section className='contact' id='contact'>
                 <Container>
-                    <Row className='align-items-center'>
+                    <Row className='align-items-center '>
                         {
                             isMobile ?
                                 <></>
