@@ -15,15 +15,18 @@ import Image3 from '../assets/Q&T-26.jpg';
 
 function Services() {
 
-    // const navigate = useNavigate()
+    
+
+    const navigate = useNavigate()
 
     const mql = window.matchMedia('(max-width: 600px)');
     let mobileView = mql.matches;
     const [seeMoreClicked, setSeeMoreClicked] = useState(false);
 
     function seeMore() {
-        setSeeMoreClicked(!seeMoreClicked);
-        console.log(seeMoreClicked)
+        navigate('/projects')
+        // setSeeMoreClicked(!seeMoreClicked);
+        // console.log(seeMoreClicked)
         // const row2 = document.getElementById("SecondRow");
         // console.log("this is row 2: ", row2)
         // row2.style.visibility = "visible";
