@@ -40,19 +40,19 @@ export default function Contact() {
 
     return (
         <div className='main-contact'>
-            <section className='contact' id='contact'>
+            <section className='contact' id='Contact'>
                 <Container>
                     <Row className='align-items-center '>
                         {
                             isMobile ?
                                 <></>
                                 :
-                                <Col md={6}>
+                                <Col xs={12} md={6} lg={6} xl={6}>
                                     <img src={MiaPhoto} alt='Image'></img>
                                 </Col>
                         }
 
-                        <Col md={6}>
+                        <Col xs={12} md={6} lg={6} xl={6}>
                             <h2>Get in touch</h2>
                             <form>
                                 <Row >

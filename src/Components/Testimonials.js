@@ -64,14 +64,14 @@ const Testimonials = (props) => {
   return (
     <div className="section-three-main-div testimonial">
       <div ref={refFeedbackParentDiv} className="section-three-sub-div-one">
-        <div className="quotes-img quotes-img-right" />
+        <div className="quotes-img quotes-img-right"  />
         {testimonialData.map((el, i) => {
           return (
             <div
               key={i}
               className={`feedbackText--${i} main-quotes-div not-visible`}
             >
-              <div className="para">{el.testimonial}</div>
+              <div className="para" >{el.testimonial}</div>
               <div className="subText">{el.author}</div>
             </div>
           );

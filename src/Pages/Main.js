@@ -14,6 +14,7 @@ import Hero from '../Components/carousel';
 import Image1 from '../assets/C&J-174.jpg'
 import Image2 from '../assets/K&C-37.jpg'
 import Image3 from '../assets/Q&T-26.jpg'
+import Styling from '../Components/Styling';
 
 
 function Main() {
@@ -42,6 +43,7 @@ function Main() {
         <h3 style={{ marginTop: "10px" }}>Services I offer</h3>
         <Services />
         <Testimonials testimonialData={data}/>
+        <Styling />
         <Contact />
         <Footer />
       </div>
