@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Image1 from '../assets/C&J-174.jpg'
+import Image2 from '../assets/K&C-37.jpg'
+import Image3 from '../assets/Q&T-26.jpg'
 import { useNavigate } from 'react-router'
 import '../App.css'
 import styled from 'styled-components';
 import Footer from '../Components/Footer';
+import { MobileProjectCard } from '../Components/ProjectCard'
+import { NormalProjectCard } from '../Components/ProjectCard'
+
 
 function Projects() {
 
@@ -38,6 +43,13 @@ function Projects() {
     transition: 0.3s ease-in-out;
 `;
 
+    const ImageStyle = {
+        // transition: "all 1.2s ease-in-out",
+        borderRadius: "20px",
+        maxWidth: "100%", marginLeft: "-110px",
+        boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)",
+    }
+
     const Terms = [
         "Deposit of 50% must be paid 1 week before the shoot to confirm you booking",
         "Extra fees will be charged for locations further than 10km from Prinshof, Pretoria.",
@@ -62,7 +74,11 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%" }} />
+                                        <img
+                                            src={Image1}
+                                            alt='Current Image'
+                                            style={{ borderRadius: "20px", maxWidth: "100%",}}
+                                        />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div>
@@ -163,7 +179,15 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%", marginLeft: "-110px", boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)" }} />
+                                        {/* <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%", marginLeft: "-110px", boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)" }} /> */}
+
+                                        <img
+                                            src={Image1}
+                                            alt='Current Image'
+                                            style={ImageStyle}
+
+                                        />
+
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div style={{ marginLeft: "-50px", }}>
@@ -205,7 +229,7 @@ function Projects() {
                                                 120 edited photos
                                                 R 750
                                             </p>
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() => {navigate("/"); window.location.href = "/#Contact"}}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -244,6 +268,113 @@ function Projects() {
             <Footer />
         </div>
     )
+
+
+
+    // return (
+    //     <div>
+    //         <div className='container p-3'>
+    //             <h2>Services and Packages I Offer</h2>
+    //             {
+    //                 isMobile ?
+    //                     <>
+    //                         <MobileProjectCard
+    //                             id={1}
+    //                             header={"Couple Shoots"}
+    //                             image={Image1}
+    //                             option1={"30 minute session 70 edited photos R650"}
+    //                             option2={"45 minute session 120 edited photos R750"}
+    //                         />
+
+    //                         <MobileProjectCard
+    //                             id={2}
+    //                             header={"Couple Shoots"}
+    //                             image={Image2}
+    //                             option1={"30 minute session 70 edited photos R650"}
+    //                             option2={"45 minute session 120 edited photos R750"}
+    //                         />
+
+    //                         <br />
+    //                         <h4>Terms and Conditions</h4>
+    //                         <div className='d-flex  p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
+    //                             <div className="column">
+    //                                 <div className="col-md-12  ">
+
+    //                                     <ol>
+    //                                         {
+    //                                             Terms.map((term) => {
+    //                                                 return (
+    //                                                     <li>{term}</li>
+    //                                                 )
+
+    //                                             })
+    //                                         }
+
+    //                                     </ol>
+    //                                 </div>
+    //                             </div>
+    //                         </div>
+
+    //                     </>
+    //                     :
+    //                     <>
+    //                         <NormalProjectCard
+    //                             id={1}
+    //                             header={"Couple Shoots"}
+    //                             image={Image1}
+    //                             option1={"30 minute session 70 edited photos R650"}
+    //                             option2={"45 minute session 120 edited photos R750"}
+    //                         />
+
+    //                         <NormalProjectCard
+    //                             id={2}
+    //                             header={"Couple Shoots"}
+    //                             image={Image2}
+    //                             option1={"30 minute session 70 edited photos R650"}
+    //                             option2={"45 minute session 120 edited photos R750"}
+    //                         />
+
+    //                         <NormalProjectCard
+    //                             id={3}
+    //                             header={"Couple Shoots"}
+    //                             image={Image3}
+    //                             option1={"30 minute session 70 edited photos R650"}
+    //                             option2={"45 minute session 120 edited photos R750"}
+    //                         />
+
+    //                         <br />
+
+    //                         <h4>Terms and Conditions</h4>
+    //                         <div className='d-flex p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
+    //                             <div className="column">
+    //                                 <div className="col-md-12">
+    //                                     <ol>
+    //                                         {
+    //                                             Terms.map((term) => {
+    //                                                 return (
+    //                                                     <li>{term}</li>
+    //                                                 )
+
+    //                                             })
+    //                                         }
+    //                                     </ol>
+    //                                 </div>
+    //                             </div>
+    //                         </div>
+
+    //                     </>
+    //             }
+
+    //         </div>
+
+    //         <Button onClick={Back} className='px-1'>
+    //             Go Back
+    //         </Button>
+    //         <Footer />
+    //     </div>
+    // )
+
+
 }
 
 export default Projects

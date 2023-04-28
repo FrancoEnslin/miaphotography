@@ -15,7 +15,7 @@ import Image3 from '../assets/Q&T-26.jpg';
 
 function Services() {
 
-    
+
 
     const navigate = useNavigate()
 
@@ -64,7 +64,7 @@ function Services() {
                                         <Card.Img variant="top" src={Image1} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
-                                        <p>Option 1</p>
+                                    <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
                                         <p>
                                             30 minute session
                                             70 edited photos
@@ -81,7 +81,7 @@ function Services() {
                             </Card>
                         </div>
                     </Col>
-                    <Col xs={4} md={4}  className='d-flex justify-content-center'>
+                    <Col xs={4} md={4} className='d-flex justify-content-center'>
                         <div class='flip-card'>
                             <Card className='Card' id='family'>
                                 <div class="flip-card-inner">
@@ -90,19 +90,19 @@ function Services() {
                                         <Card.Img variant="top" src={Image2} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
-                                        <p>Option 1</p>
+                                    <p> <b style={{ textDecoration: "bold"}}>Option 1</b></p>
                                         <p>
                                             60 minute session
                                             150 edited photos
                                             4-6 people
-                                            R 950
+                                            R950
                                         </p>
                                         <p>Option 2</p>
                                         <p>
                                             90 minute session
                                             170 edited photos
                                             4-6 people
-                                            R 1200
+                                            R1200
                                         </p>
                                     </div>
                                 </div>
@@ -122,13 +122,13 @@ function Services() {
                                         <p>
                                             30 minute session
                                             70 edited photos
-                                            R 550
+                                            R550
                                         </p>
                                         <p>Option 2</p>
                                         <p>
                                             45 minute session
                                             90 edited photos
-                                            R 650
+                                            R650
                                         </p>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@ function Services() {
                     seeMoreClicked ?
                         <div>
                             <Row id='SecondRow' className='row2' style={mobileView ? { marginBottom: "10px" } : { marginBottom: "0px" }}>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center'>
+                                <Col xs={4} md={4} className='d-flex justify-content-center'>
                                     <div class='flip-card'>
                                         <Card className='Card' id='friendship'>
 
@@ -172,7 +172,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
+                                <Col xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='events'>
 
@@ -200,7 +200,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
+                                <Col xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='matric'>
 
@@ -234,7 +234,7 @@ function Services() {
                             </Row>
 
                             <Row id='row3' className='row3'>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
+                                <Col xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='formals'>
 
@@ -272,7 +272,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
+                                <Col xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='graduations'>
 
@@ -303,7 +303,7 @@ function Services() {
 
 
                                 </Col>
-                                <Col  xs={4} md={4} className='d-flex justify-content-center' >
+                                <Col xs={4} md={4} className='d-flex justify-content-center' >
                                     <div class='flip-card'>
                                         <Card className='Card' id='engagements'>
 
@@ -313,7 +313,7 @@ function Services() {
                                                     <Card.Img variant="top" src={Image2} alt='Photo' />
                                                 </div>
                                                 <div class="flip-card-back">
-                                                    <p>Option 1</p>
+                                                    <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
                                                     <p>
                                                         30 minutes
                                                         80 pictures

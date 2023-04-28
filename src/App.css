@@ -83,6 +83,7 @@
   }
 
   .flip-card-back {
+   
     color: black;
     transform: rotateY(180deg);
   }
@@ -259,6 +260,7 @@ body {
 }
 
 .flip-card-back {
+  padding: 3px;
   color: black;
   transform: rotateY(180deg);
 }
