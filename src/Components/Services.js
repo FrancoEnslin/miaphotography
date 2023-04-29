@@ -64,18 +64,15 @@ function Services() {
                                         <Card.Img variant="top" src={Image1} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
-                                    <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
-                                        <p>
-                                            30 minute session
-                                            70 edited photos
-                                            R 650
-                                        </p>
-                                        <p>Option 2</p>
-                                        <p>
-                                            45 minute session
-                                            120 edited photos
-                                            R 750
-                                        </p>
+                                        <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
+                                        <p> 30 minute session </p>
+                                        <p> 70 edited photos  </p>
+                                        <p> R650  </p>
+                                        <p> <b style={{ textDecoration: "bold" }}>Option 2</b></p>
+                                        <p>See more...</p>
+                                        {/* <p> 45 minute session </p>
+                                           <p> 120 edited photos</p> 
+                                          <p> R750</p> */}
                                     </div>
                                 </div>
                             </Card>
@@ -90,19 +87,18 @@ function Services() {
                                         <Card.Img variant="top" src={Image2} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
-                                    <p> <b style={{ textDecoration: "bold"}}>Option 1</b></p>
-                                        <p>
-                                            60 minute session
-                                            150 edited photos
-                                            4-6 people
-                                            R950
-                                        </p>
-                                        <p>Option 2</p>
-                                        <p>
-                                            90 minute session
-                                            170 edited photos
-                                            4-6 people
-                                            R1200
+                                        <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
+                                        <p> 60 minute session </p>
+                                        <p>150 edited photos, 4-6 people </p>
+
+                                        <p> R950</p>
+                                        <p> <b style={{ textDecoration: "bold" }}>Option 2</b></p>
+                                        <p> See more...
+                                            {/* 90 minute session </p>
+                                            <p>   170 edited photos </p>
+                                         
+                                          <p>  4-6 people</p> 
+                                       <p>     R1200 */}
                                         </p>
                                     </div>
                                 </div>
@@ -118,17 +114,18 @@ function Services() {
                                         <Card.Img variant="top" src={Image3} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
-                                        <p>Option 1</p>
-                                        <p>
-                                            30 minute session
-                                            70 edited photos
-                                            R550
+                                        <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
+                                        <p> 30 minute session </p>
+                                        <p>  70 edited photos </p>
+                                        <p>    R550
                                         </p>
-                                        <p>Option 2</p>
-                                        <p>
-                                            45 minute session
-                                            90 edited photos
-                                            R650
+                                        <p> <b style={{ textDecoration: "bold" }}>Option 2</b></p>
+                                        <p> See more...
+                                            {/* 45 minute session
+                                            </p>
+                                            <p> 90 edited photos </p>
+                                           
+                                       <p>     R650 */}
                                         </p>
                                     </div>
                                 </div>
@@ -137,7 +134,7 @@ function Services() {
                     </Col>
                 </Row>
 
-                {
+                {/* {
                     seeMoreClicked ?
                         <div>
                             <Row id='SecondRow' className='row2' style={mobileView ? { marginBottom: "10px" } : { marginBottom: "0px" }}>
@@ -151,14 +148,14 @@ function Services() {
                                                     <Card.Img variant="top" src={Image1} alt='Photo' />
                                                 </div>
                                                 <div class="flip-card-back">
-                                                    <p>Option 1</p>
+                                                <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
                                                     <p>
                                                         30 minute session
                                                         80 edited photos
                                                         2-3 people
                                                         R 650
                                                     </p>
-                                                    <p>Option 2</p>
+                                                    <p> <b style={{ textDecoration: "bold" }}>Option 2</b></p>
                                                     <p>
                                                         60 minute session
                                                         120 edited photos
@@ -182,7 +179,7 @@ function Services() {
                                                     <Card.Img variant="top" src={Image2} alt='Photo' />
                                                 </div>
                                                 <div class="flip-card-back">
-                                                    <p>Option 1</p>
+                                                <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
                                                     <p>
                                                         For the first 60 minutes
                                                         R850
@@ -210,14 +207,14 @@ function Services() {
                                                     <Card.Img variant="top" src={Image3} alt='Photo' />
                                                 </div>
                                                 <div class="flip-card-back">
-                                                    <p>Option 1</p>
+                                                <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
                                                     <p>
                                                         90 minutes
                                                         170 edited photos
                                                         2 people (couple) & Family
                                                         R1750
                                                     </p>
-                                                    <p>Option 2</p>
+                                                    <p> <b style={{ textDecoration: "bold" }}>Option 2</b></p>
                                                     <p>
                                                         60 minutes
                                                         150 edited photos
@@ -295,7 +292,7 @@ function Services() {
                                                         120 edited photos
                                                         4-6 people
                                                         R 1125
-                                                    </p>
+                                                    </p> 
                                                 </div>
                                             </div>
                                         </Card>
@@ -345,9 +342,9 @@ function Services() {
                         </div>
                         :
                         <></>
-                }
+                } */}
 
-                <button onClick={seeMore} id="seeMoreBtn" className='px-1'>
+                <button onClick={seeMore} id="seeMoreBtn" className='px-1' style={{ marginTop: "10px" }}>
                     {seeMoreClicked ? "See less..." : "See more..."}
                 </button>
 

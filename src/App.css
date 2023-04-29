@@ -83,7 +83,7 @@
   }
 
   .flip-card-back {
-   
+    padding: 0;
     color: black;
     transform: rotateY(180deg);
   }
@@ -272,7 +272,7 @@ body {
 
   padding: 6px 20px;
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 10px;
   border-radius: 15px;
   position: relative;
@@ -532,19 +532,20 @@ body {
 
 /* New Testimonial Styling */
 .section-three-main-div {
-  background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
+  /* background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg"); */
+  background-image: url("../src/assets/C&J-5.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   border-radius: 10px;
   width: 100%;
   height: auto;
-  min-height: 350px;
+  min-height: 400px;
   display: grid;
   grid-template-rows: 1fr 50px;
   justify-items: center;
   row-gap: 1rem;
-  /* background-color: rgb(250, 251, 253); */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -645,9 +646,11 @@ margin-top: 40px;
 
 
   .section-three-main-div {
-    background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg");
+    /* background-image: url("../src/assets/pexels-matt-hardy-1533720.jpg"); */
+    background-image: url("../src/assets/C&J-5.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: auto;
     min-height: 250px;
