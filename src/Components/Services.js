@@ -13,6 +13,23 @@ import Image1 from '../assets/C&J-174.jpg';
 import Image2 from '../assets/K&C-37.jpg';
 import Image3 from '../assets/Q&T-26.jpg';
 
+// Family
+import Family1 from '../assets/Family/SFam-31.jpg'
+import Family2 from '../assets/Family/SFam-209.jpg'
+import Family3 from '../assets/Family/SFam-246.jpg'
+
+//Couples
+import Couple1 from '../assets/Couples/Q&T-83.jpg'
+import Couple2 from '../assets/Couples/Q&T-71.jpg'
+import Couple3 from '../assets/Couples/Q&T-90.jpg'
+import Couple4 from '../assets/Couples/Q&T-151.jpg'
+
+//Formals
+import Formal1 from '../assets/Formals/EFormal-88.jpg'
+import Formal2 from '../assets/Formals/EFormal-96.jpg'
+import Formal3 from '../assets/Formals/Kloekies-1.jpg'
+import Formal4 from '../assets/Formals/Kloekies-34.jpg'
+
 function Services() {
 
 
@@ -61,7 +78,7 @@ function Services() {
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <Card.Body> Couple shoot </Card.Body>
-                                        <Card.Img variant="top" src={Image1} alt='Photo' />
+                                        <Card.Img variant="top" src={Couple2} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
                                         <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
@@ -84,7 +101,7 @@ function Services() {
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <Card.Body> Family shoot </Card.Body>
-                                        <Card.Img variant="top" src={Image2} alt='Photo' />
+                                        <Card.Img variant="top" src={Family2} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
                                         <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
@@ -111,7 +128,7 @@ function Services() {
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <Card.Body> Portait shoot </Card.Body>
-                                        <Card.Img variant="top" src={Image3} alt='Photo' />
+                                        <Card.Img variant="top" src={Formal1} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
                                         <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>

@@ -18,6 +18,30 @@ import Graduation1 from '../assets/Graduation/IMG_0817.JPG'
 import Graduation2 from '../assets/Graduation/IMG_0818.JPG'
 import Graduation3 from '../assets/Graduation/IMG_0819.JPG'
 
+//Couples
+import Couple1 from '../assets/Couples/Q&T-83.jpg'
+import Couple2 from '../assets/Couples/Q&T-71.jpg'
+import Couple3 from '../assets/Couples/Q&T-90.jpg'
+import Couple4 from '../assets/Couples/Q&T-151.jpg'
+
+//Engagements
+import Engagement1 from '../assets/Engagement/E&S-18.jpg'
+import Engagement2 from '../assets/Engagement/E&S-73.jpg'
+import Engagement3 from '../assets/Engagement/E&S-104.jpg'
+
+//Formals
+import Formal1 from '../assets/Formals/EFormal-88.jpg'
+import Formal2 from '../assets/Formals/EFormal-96.jpg'
+import Formal3 from '../assets/Formals/Kloekies-1.jpg'
+import Formal4 from '../assets/Formals/Kloekies-34.jpg'
+
+
+//Matric Dance
+import MatricDance1 from '../assets/Matric Dance/A & M-142.jpg'
+import MatricDance2 from '../assets/Matric Dance/A & M-149.jpg'
+import MatricDance3 from '../assets/Matric Dance/A & M-160.jpg'
+
+
 
 import { useNavigate } from 'react-router'
 import '../App.css'
@@ -25,6 +49,7 @@ import styled from 'styled-components';
 import Footer from '../Components/Footer';
 import { MobileProjectCard } from '../Components/ProjectCard'
 import { NormalProjectCard } from '../Components/ProjectCard'
+import MyNavbar from '../Components/Navbar'
 
 
 function Projects() {
@@ -94,6 +119,7 @@ function Projects() {
 
     return (
         <div>
+            <MyNavbar />
             <div className='container p-3'>
                 <h2>Services and Packages I Offer</h2>
                 {
@@ -379,7 +405,7 @@ function Projects() {
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
                                         {/* <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%", marginLeft: "-110px", boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)" }} /> */}
                                         <img
-                                            src={Image1}
+                                            src={Couple3}
                                             alt='Current Image'
                                             style={ImageLeftStyle}
                                         />
@@ -434,7 +460,7 @@ function Projects() {
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
                                         {/* <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%", marginLeft: "-110px", boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)" }} /> */}
                                         <img
-                                            src={Image1}
+                                            src={Couple3}
                                             alt='Current Image'
                                             style={ImageLeftStyle}
                                         />
@@ -475,7 +501,7 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageRightStyle} />
+                                        <img src={Couple4} alt='First Image' style={ImageRightStyle} />
                                     </div>
                                 </div>
                             </div>
@@ -492,7 +518,7 @@ function Projects() {
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
                                         {/* <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%", marginLeft: "-110px", boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)" }} /> */}
                                         <img
-                                            src={Image1}
+                                            src={Event2}
                                             alt='Current Image'
                                             style={ImageLeftStyle}
                                         />
@@ -534,7 +560,7 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageRightStyle} />
+                                        <img src={MatricDance2} alt='First Image' style={ImageRightStyle} />
                                     </div>
                                 </div>
                             </div>
@@ -547,7 +573,7 @@ function Projects() {
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
                                         {/* <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%", marginLeft: "-110px", boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)" }} /> */}
                                         <img
-                                            src={Image1}
+                                            src={Formal4}
                                             alt='Current Image'
                                             style={ImageLeftStyle}
                                         />
@@ -596,7 +622,7 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageRightStyle} />
+                                        <img src={Graduation1} alt='First Image' style={ImageRightStyle} />
                                     </div>
                                 </div>
                             </div>
@@ -606,7 +632,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageLeftStyle} />
+                                        <img src={Engagement2} alt='First Image' style={ImageLeftStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div style={{ marginLeft: "-50px", }}>

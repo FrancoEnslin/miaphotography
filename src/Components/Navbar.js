@@ -5,14 +5,15 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function MyNavbar() {
   return (
-    <Navbar  expand="sm">
+    <div >
+      <Navbar  expand="sm" >
       <Container>
-        <Navbar.Brand href="#home">Mia Schulenberg Photography</Navbar.Brand>
+        <Navbar.Brand href="/">Mia Schulenberg Photography</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About Me</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            {/* <Nav.Link href="#about">About Me</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="#couples">Couples</NavDropdown.Item>
@@ -25,11 +26,13 @@ function MyNavbar() {
                 Contact Me
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href='#faq'>FAQ</Nav.Link>
+            <Nav.Link href='#faq'>FAQ</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
+    
   );
 }
 
