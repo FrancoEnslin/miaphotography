@@ -120,7 +120,8 @@ const HeroWrapper = styled.div`
 `;
 
 const Hero = ({ images, interval, menuItems }) => {
-  const [currentImage, setCurrentImage] = useState(0);
+  console.log("Amount of images: ", images.length)
+  const [currentImage, setCurrentImage] = useState(1);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {

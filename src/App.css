@@ -2,10 +2,35 @@
   text-align: center;
   align-items: center;
   /* background-color: #e3d4c5; */
-  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
+  /* background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%); */
   width: 100%;
 }
 
+#NotFound{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/Events/Cara\ P\ 21\ 2-130.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10%;
+  height: 600px;
+  margin-top: 20px;
+}
+
+
+#NotFound h1{
+  color: white
+}
+
+#NotFound p{
+  color: white
+}
+
+#NotFound Link{
+  color: white;
+}
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -26,10 +51,25 @@
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {}
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+
+  #NotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/Events/Cara\ P\ 21\ 2-130.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+    height: 600px;
+    margin-top: 20px;
+  }
 
   #Services {
     display: grid;
@@ -41,7 +81,7 @@
     /* background-position: top center; */
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
+    /* background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%); */
   }
 
   /* New Card Styling */
@@ -119,7 +159,7 @@
 
 .body {
   background-image: url("../src/assets/Q&T-26.jpg");
-  background-color: #cccccc;
+  /* background-color: #cccccc; */
 }
 
 /* Ensure page uses full width */
@@ -130,6 +170,8 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
+   /* background-color: #cccccc; */
 }
 
 
@@ -159,7 +201,7 @@ body {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
+  /* background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%); */
 }
 
 .banner .tagline {
@@ -218,7 +260,7 @@ body {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
+  /* background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%); */
 }
 
 /* New Card Styling */
@@ -702,10 +744,36 @@ margin-top: 40px;
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
+  #NotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/Events/Cara\ P\ 21\ 2-125.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+    height: 600px;
+    margin-top: 20px;
+  }
+
+  
+#NotFound h1{
+  color: white
+}
+
+#NotFound p{
+  color: white
+}
+
+#NotFound Link{
+  color: white
+}
+
   .App {
     text-align: center;
     align-items: center;
-    background-color: #e3d4c5;
+    /* background-color: #e3d4c5; */
     width: 100%;
   }
 
@@ -785,7 +853,7 @@ margin-top: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-inline: -10px;
-    background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%);
+    /* background: linear-gradient(90.21deg, rgba(219, 213, 217, 0.5) -5.91%, #E3D4C5 111.58%); */
   }
 
   .flip-card {

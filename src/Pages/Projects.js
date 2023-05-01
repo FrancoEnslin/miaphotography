@@ -34,7 +34,7 @@ import Formal1 from '../assets/Formals/EFormal-88.jpg'
 import Formal2 from '../assets/Formals/EFormal-96.jpg'
 import Formal3 from '../assets/Formals/Kloekies-1.jpg'
 import Formal4 from '../assets/Formals/Kloekies-34.jpg'
-
+import Formal5 from '../assets/Formals/Madelief-228.jpg'
 
 //Matric Dance
 import MatricDance1 from '../assets/Matric Dance/A & M-142.jpg'
@@ -131,7 +131,7 @@ function Projects() {
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
                                         <img
-                                            src={Image1}
+                                            src={Couple2}
                                             alt='Current Image'
                                             style={ImageMobileStyle}
                                         />
@@ -157,7 +157,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family1} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Family2} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div>
@@ -205,7 +205,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Event1} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div >
@@ -234,7 +234,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Event3} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div >
@@ -260,7 +260,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={MatricDance1} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div >
@@ -288,7 +288,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Formal5} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div >
@@ -320,7 +320,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Graduation1} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div >
@@ -347,7 +347,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Family2} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Engagement3} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div >
