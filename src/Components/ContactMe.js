@@ -3,12 +3,21 @@ import { Col, Container, Row } from 'react-bootstrap';
 import MiaPhoto from '../assets/Mia Photo.jpeg'
 
 export default function Contact() {
+
     const startingFormDetails = {
         firstName: '',
         lastName: '',
         email: '',
         phone: '',
+        category:  '',
+        option: '',
         message: '',
+    }
+
+
+    if (sessionStorage.getItem("Active Category") !== ""){
+        console.log("Active Category on this side: ", sessionStorage.getItem("Active Category"))
+        // setActiveCategory(sessionStorage.getItem("Active Category"))
     }
 
     const [isMobile, setIsMobile] = useState(false);
@@ -70,8 +79,20 @@ export default function Contact() {
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
                                         <input type='tel' value={startingFormDetails.phone} placeholder='086......' onChange={(e) => onFormUpdate('phone', e.target.value)} />
-
                                     </Col>
+
+                                    <Col size={12} sm={6} className='px-1'>
+                                        <input type='dropdown' value={startingFormDetails.category} placeholder='Couple' onChange={(e) => onFormUpdate('category', e.target.value)} />
+                                    </Col>
+                                    <Col size={12} sm={6} className='px-1'>
+                                        <select id="options" name="options" placeholder='Option 1'>
+                                        {/* value={startingFormDetails.option} */}
+                                            <option value="1" onChange={(e) => onFormUpdate('option', e.target.value)}>Option 1</option>
+                                            <option value="2" onChange={(e) => onFormUpdate('option', e.target.value)}>Option 2</option>
+                                            <option value="3" onChange={(e) => onFormUpdate('option', e.target.value)}>Option 3</option>
+                                        </select>
+                                    </Col>
+
                                     <Col size={12} className="px-1">
                                         <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                                         <button type="submit" ><span>{buttonText}</span></button>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Image1 from '../assets/C&J-174.jpg'
 import Image2 from '../assets/K&C-37.jpg'
 import Image3 from '../assets/Q&T-26.jpg'
@@ -55,6 +55,10 @@ import MyNavbar from '../Components/Navbar'
 function Projects() {
 
     const navigate = useNavigate();
+
+    const HandleBooking = useCallback((category) =>{
+        sessionStorage.setItem("Active Category",category)
+    })
 
     function Back() {
         navigate('/')
@@ -147,7 +151,7 @@ function Projects() {
                                             <p> 120 edited photos </p>
                                             <p> R750 </p>
 
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() =>  HandleBooking("Couple")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +174,7 @@ function Projects() {
                                             <p> 170 edited photos </p>
                                             <p> 4-6 people</p>
                                             <p> R1200  </p>
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() =>  HandleBooking("Family")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -193,7 +197,7 @@ function Projects() {
                                             <p> 45 minute session </p>
                                             <p> 90 edited photos </p>
                                             <p>  R650 </p>
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Portrait")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +223,7 @@ function Projects() {
                                             <p> 120 edited photos</p>
                                             <p> 4-6 people</p>
                                             <p> R850  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Friendship")}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -246,7 +250,7 @@ function Projects() {
                                             <p> 120 edited photos</p>
                                             <p> 4-6 people</p>
                                             <p> R850  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Events")}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -274,7 +278,7 @@ function Projects() {
                                             <p>   150 edited photos</p>
                                             <p>  Portraits & Family</p>
                                             <p>    R1350  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Matric")}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -307,7 +311,7 @@ function Projects() {
                                             <p>  150+ edited photos</p>
                                             <p>   7+ people</p>
                                             <p>     R 150 per person  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Formals")}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -334,7 +338,7 @@ function Projects() {
                                             <p>   120 edited photos</p>
                                             <p>   4-6 people</p>
                                             <p>   R 1125  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Graduation")}}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -366,7 +370,7 @@ function Projects() {
                                             <p>   150 pictures</p>
                                             <p>    *Add the family</p>
                                             <p>    R1200  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Engagement")}}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -420,7 +424,7 @@ function Projects() {
                                             <p>  45 minute session </p>
                                             <p> 90 edited photos </p>
                                             <p> R650 </p>
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Couple")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -443,7 +447,7 @@ function Projects() {
                                             <p> 170 edited photos </p>
                                             <p> 4-6 people</p>
                                             <p> R1200  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Family")}}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -475,7 +479,7 @@ function Projects() {
                                             <p>  45 minute session </p>
                                             <p> 90 edited photos </p>
                                             <p> R650 </p>
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Portrait")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -497,7 +501,7 @@ function Projects() {
                                             <p> 120 edited photos</p>
                                             <p> 4-6 people</p>
                                             <p> R850  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Friendship")}}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -506,11 +510,7 @@ function Projects() {
                                 </div>
                             </div>
 
-
-
                             <br />
-
-
 
                             <h4>Events</h4>
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
@@ -533,7 +533,7 @@ function Projects() {
                                             <p> 120 edited photos</p>
                                             <p> 4-6 people</p>
                                             <p> R850  </p>
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Events")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -556,7 +556,7 @@ function Projects() {
                                             <p>   150 edited photos</p>
                                             <p>  Portraits & Family</p>
                                             <p>    R1350  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Matric")}}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -595,7 +595,7 @@ function Projects() {
                                             <p>  150+ edited photos</p>
                                             <p>   7+ people</p>
                                             <p>     R 150 per person  </p>
-                                            <Button onClick={() => window.location.href = "/#Contact"}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Formals")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -618,7 +618,7 @@ function Projects() {
                                             <p>   120 edited photos</p>
                                             <p>   4-6 people</p>
                                             <p>   R 1125  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Graduation")}}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -651,7 +651,7 @@ function Projects() {
                                             <p>   150 pictures</p>
                                             <p>    *Add the family</p>
                                             <p>    R1200  </p>
-                                            <Button onClick={() => { navigate("/"); window.location.href = "/#Contact" }}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Engagements")}}>Book my Session</Button>
                                         </div>
                                     </div>
 

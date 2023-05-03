@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Photo from '../assets/Mia Photo.jpeg'
+import MiaPhoto from '../assets/Portraits/Mia/848A9137.jpg'
 
 
 function AboutMe() {
@@ -81,7 +82,7 @@ function AboutMe() {
                         </Col>
                         <Col xs={12} md={6} lg={6} xl={6}>
                             {/*  */}
-                            <img id='AboutMePhoto' src={Photo} alt='Some cool photo' className='' />
+                            <img id='AboutMePhoto' src={MiaPhoto} alt='Some cool photo' className='' />
                         </Col>
                     </Row>
                 </Container>

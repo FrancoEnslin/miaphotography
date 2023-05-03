@@ -367,6 +367,7 @@ body {
 }
 
 .contact form input,
+.contact form select,
 .contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
@@ -382,12 +383,14 @@ body {
 }
 
 .contact form input:focus,
+.contact form select:focus,
 .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: rgb(7, 7, 7);
 }
 
 .contact form input::placeholder,
+.contact form select::placeholder,
 .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
@@ -395,6 +398,7 @@ body {
 }
 
 .contact form input:focus::placeholder,
+.contact form select:focus::placeholder,
 .contact form textarea:focus::placeholder {
   color: white;
   opacity: 0.8;
@@ -885,7 +889,8 @@ margin-top: 40px;
     color: white;
   }
 
-  .contact form input,
+  .contact form input, 
+  .contact form select,
   .contact form textarea {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
@@ -901,12 +906,14 @@ margin-top: 40px;
   }
 
   .contact form input:focus,
+  .contact form select:focus,
   .contact form textarea:focus {
     background: rgba(255, 255, 255, 1);
     color: rgb(7, 7, 7);
   }
 
   .contact form input::placeholder,
+  .contact form select::placeholder,
   .contact form textarea::placeholder {
     font-size: 16px;
     font-weight: 400;
@@ -914,6 +921,7 @@ margin-top: 40px;
   }
 
   .contact form input:focus::placeholder,
+  .contact form select:focus::placeholder,
   .contact form textarea:focus::placeholder {
     color: white;
     opacity: 0.8;
