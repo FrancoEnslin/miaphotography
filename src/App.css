@@ -342,7 +342,7 @@ body {
 /************ Contact Css ************/
 
 .main-contact {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
 
 }

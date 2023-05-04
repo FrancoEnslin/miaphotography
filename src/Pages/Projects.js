@@ -8,6 +8,10 @@ import Family1 from '../assets/Family/SFam-31.jpg'
 import Family2 from '../assets/Family/SFam-209.jpg'
 import Family3 from '../assets/Family/SFam-246.jpg'
 
+
+//Portrait 
+import Portrait from '../assets/Portraits/Minette-30.jpg'
+
 // Event
 import Event1 from '../assets/Events/Cara P 21 2-57.jpg'
 import Event2 from '../assets/Events/Cara P 21 2-125.jpg'
@@ -184,7 +188,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Image1} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Portrait} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div>
@@ -464,7 +468,7 @@ function Projects() {
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
                                         {/* <img src={Image1} alt='First Image' style={{ borderRadius: "20px", maxWidth: "100%", marginLeft: "-110px", boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.25)" }} /> */}
                                         <img
-                                            src={Couple3}
+                                            src={Portrait}
                                             alt='Current Image'
                                             style={ImageLeftStyle}
                                         />

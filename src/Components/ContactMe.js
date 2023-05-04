@@ -82,7 +82,20 @@ export default function Contact() {
                                     </Col>
 
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='dropdown' value={startingFormDetails.category} placeholder='Couple' onChange={(e) => onFormUpdate('category', e.target.value)} />
+                                        {/* <input type='dropdown' value={startingFormDetails.category} placeholder='Couple' onChange={(e) => onFormUpdate('category', e.target.value)} /> */}
+
+                                        <select id="categories" name="categories" placeholder='Option 1' className='px-1'>
+                                        {/* value={startingFormDetails.option} */}
+                                            <option className='px-1' value="Couple" onChange={(e) => onFormUpdate('category', e.target.value)}>Couple</option>
+                                            <option value="Portrait" onChange={(e) => onFormUpdate('category', e.target.value)}>Portrait</option>
+                                            <option value="Family" onChange={(e) => onFormUpdate('category', e.target.value)}>Family</option>
+                                            <option value="Friendship" onChange={(e) => onFormUpdate('category', e.target.value)}>Friendship</option>
+                                            <option value="Events" onChange={(e) => onFormUpdate('category', e.target.value)}>Events</option>
+                                            <option value="Matric" onChange={(e) => onFormUpdate('category', e.target.value)}>Matric</option>
+                                            <option value="Formals" onChange={(e) => onFormUpdate('category', e.target.value)}>Formals</option>
+                                            <option value="Graduation" onChange={(e) => onFormUpdate('category', e.target.value)}>Graduation</option>
+                                            <option value="Engagement" onChange={(e) => onFormUpdate('category', e.target.value)}>Engagement</option>
+                                        </select>
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
                                         <select id="options" name="options" placeholder='Option 1'>
