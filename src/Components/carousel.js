@@ -134,7 +134,7 @@ const Hero = ({ images, interval, menuItems }) => {
   return (
     <HeroWrapper style={{ backgroundImage: `url(${images[currentImage]})` }}>
       <NavbarWrapper>
-        <h3 style={{ color: "white" }}>Mia Schulenberg</h3>
+        <h3 style={{ color: "white" }}>Mia Schulenburg</h3>
 
         <BurgerWrapper onClick={() => setMenuOpen(!menuOpen)}>
           <BurgerIcon className={`${menuOpen ? "open" : ""} top`} />

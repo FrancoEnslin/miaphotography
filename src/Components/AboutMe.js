@@ -30,7 +30,7 @@ function AboutMe() {
                         <Col xs={12} md={6} lg={6} xl={6}>
                             <span className='tagline'>Looking to capture your favourite moments?
                                 You are at the right place</span>
-                            <h2 >{`Mia Schulenberg `}</h2>
+                            <h2 >{`Mia Schulenburg `}</h2>
 
                             {
                                 isMobile ?

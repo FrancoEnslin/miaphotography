@@ -47,7 +47,7 @@ import MatricDance3 from '../assets/Matric Dance/A & M-160.jpg'
 
 
 
-import { useNavigate } from 'react-router'
+import { useHref, useNavigate } from 'react-router'
 import '../App.css'
 import styled from 'styled-components';
 import Footer from '../Components/Footer';
@@ -59,10 +59,20 @@ import MyNavbar from '../Components/Navbar'
 function Projects() {
 
     const navigate = useNavigate();
-
-    const HandleBooking = useCallback((category) =>{
-        sessionStorage.setItem("Active Category",category)
+    const [agreed, setAgreed] = useState(false);
+    const HandleBooking = useCallback((category) => {
+        console.log('function: ', agreed)
+        if (agreed) {
+            sessionStorage.setItem("Active Category", category);
+            window.location.href = '/';
+        }
+        else {
+            alert('Please agree to the terms and conditions.');
+            window.location.href = '#terms'
+        }
     })
+
+
 
     function Back() {
         navigate('/')
@@ -155,7 +165,7 @@ function Projects() {
                                             <p> 120 edited photos </p>
                                             <p> R750 </p>
 
-                                            <Button onClick={() =>  HandleBooking("Couple")}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Couple")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +188,7 @@ function Projects() {
                                             <p> 170 edited photos </p>
                                             <p> 4-6 people</p>
                                             <p> R1200  </p>
-                                            <Button onClick={() =>  HandleBooking("Family")}>Book my Session</Button>
+                                            <Button onClick={() => HandleBooking("Family")}>Book my Session</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -342,7 +352,7 @@ function Projects() {
                                             <p>   120 edited photos</p>
                                             <p>   4-6 people</p>
                                             <p>   R 1125  </p>
-                                            <Button onClick={() => { HandleBooking("Graduation")}}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Graduation") }}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -374,7 +384,7 @@ function Projects() {
                                             <p>   150 pictures</p>
                                             <p>    *Add the family</p>
                                             <p>    R1200  </p>
-                                            <Button onClick={() => { HandleBooking("Engagement")}}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Engagement") }}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -451,7 +461,7 @@ function Projects() {
                                             <p> 170 edited photos </p>
                                             <p> 4-6 people</p>
                                             <p> R1200  </p>
-                                            <Button onClick={() => { HandleBooking("Family")}}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Family") }}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -505,7 +515,7 @@ function Projects() {
                                             <p> 120 edited photos</p>
                                             <p> 4-6 people</p>
                                             <p> R850  </p>
-                                            <Button onClick={() => { HandleBooking("Friendship")}}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Friendship") }}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -560,7 +570,7 @@ function Projects() {
                                             <p>   150 edited photos</p>
                                             <p>  Portraits & Family</p>
                                             <p>    R1350  </p>
-                                            <Button onClick={() => { HandleBooking("Matric")}}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Matric") }}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -622,7 +632,7 @@ function Projects() {
                                             <p>   120 edited photos</p>
                                             <p>   4-6 people</p>
                                             <p>   R 1125  </p>
-                                            <Button onClick={() => { HandleBooking("Graduation")}}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Graduation") }}>Book my Session</Button>
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -655,7 +665,7 @@ function Projects() {
                                             <p>   150 pictures</p>
                                             <p>    *Add the family</p>
                                             <p>    R1200  </p>
-                                            <Button onClick={() => { HandleBooking("Engagements")}}>Book my Session</Button>
+                                            <Button onClick={() => { HandleBooking("Engagements") }}>Book my Session</Button>
                                         </div>
                                     </div>
 
@@ -685,6 +695,13 @@ function Projects() {
                 }
 
             </div>
+            <div class="form-check" className='App' id='terms'>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onClick={() => { setAgreed(true); console.log(agreed) }} />
+                <label class="form-check-label" for="flexCheckDefault" >
+                    I Agree to the terms and conditions
+                </label>
+            </div>
+
 
             <Button onClick={Back} className='px-1'>
                 Go Back
@@ -693,110 +710,6 @@ function Projects() {
         </div >
     )
 
-
-
-    // return (
-    //     <div>
-    //         <div className='container p-3'>
-    //             <h2>Services and Packages I Offer</h2>
-    //             {
-    //                 isMobile ?
-    //                     <>
-    //                         <MobileProjectCard
-    //                             id={1}
-    //                             header={"Couple Shoots"}
-    //                             image={Image1}
-    //                             option1={"30 minute session 70 edited photos R650"}
-    //                             option2={"45 minute session 120 edited photos R750"}
-    //                         />
-
-    //                         <MobileProjectCard
-    //                             id={2}
-    //                             header={"Couple Shoots"}
-    //                             image={Image2}
-    //                             option1={"30 minute session 70 edited photos R650"}
-    //                             option2={"45 minute session 120 edited photos R750"}
-    //                         />
-
-    //                         <br />
-    //                         <h4>Terms and Conditions</h4>
-    //                         <div className='d-flex  p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
-    //                             <div className="column">
-    //                                 <div className="col-md-12  ">
-
-    //                                     <ol>
-    //                                         {
-    //                                             Terms.map((term) => {
-    //                                                 return (
-    //                                                     <li>{term}</li>
-    //                                                 )
-
-    //                                             })
-    //                                         }
-
-    //                                     </ol>
-    //                                 </div>
-    //                             </div>
-    //                         </div>
-
-    //                     </>
-    //                     :
-    //                     <>
-    //                         <NormalProjectCard
-    //                             id={1}
-    //                             header={"Couple Shoots"}
-    //                             image={Image1}
-    //                             option1={"30 minute session 70 edited photos R650"}
-    //                             option2={"45 minute session 120 edited photos R750"}
-    //                         />
-
-    //                         <NormalProjectCard
-    //                             id={2}
-    //                             header={"Couple Shoots"}
-    //                             image={Image2}
-    //                             option1={"30 minute session 70 edited photos R650"}
-    //                             option2={"45 minute session 120 edited photos R750"}
-    //                         />
-
-    //                         <NormalProjectCard
-    //                             id={3}
-    //                             header={"Couple Shoots"}
-    //                             image={Image3}
-    //                             option1={"30 minute session 70 edited photos R650"}
-    //                             option2={"45 minute session 120 edited photos R750"}
-    //                         />
-
-    //                         <br />
-
-    //                         <h4>Terms and Conditions</h4>
-    //                         <div className='d-flex p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
-    //                             <div className="column">
-    //                                 <div className="col-md-12">
-    //                                     <ol>
-    //                                         {
-    //                                             Terms.map((term) => {
-    //                                                 return (
-    //                                                     <li>{term}</li>
-    //                                                 )
-
-    //                                             })
-    //                                         }
-    //                                     </ol>
-    //                                 </div>
-    //                             </div>
-    //                         </div>
-
-    //                     </>
-    //             }
-
-    //         </div>
-
-    //         <Button onClick={Back} className='px-1'>
-    //             Go Back
-    //         </Button>
-    //         <Footer />
-    //     </div>
-    // )
 
 
 }

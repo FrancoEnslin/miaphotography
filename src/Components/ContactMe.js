@@ -9,13 +9,13 @@ export default function Contact() {
         lastName: '',
         email: '',
         phone: '',
-        category:  '',
+        category: '',
         option: '',
         message: '',
     }
 
 
-    if (sessionStorage.getItem("Active Category") !== ""){
+    if (sessionStorage.getItem("Active Category") !== "") {
         console.log("Active Category on this side: ", sessionStorage.getItem("Active Category"))
         // setActiveCategory(sessionStorage.getItem("Active Category"))
     }
@@ -23,13 +23,13 @@ export default function Contact() {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.outerWidth <= 600);
-      };
-  
-      window.addEventListener('resize', handleResize);
-      handleResize(); // check initial size
-      return () => window.removeEventListener('resize', handleResize);
+        const handleResize = () => {
+            setIsMobile(window.outerWidth <= 600);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // check initial size
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     const mql = window.matchMedia('(max-width: 600px)');
@@ -84,9 +84,10 @@ export default function Contact() {
                                     <Col size={12} sm={6} className='px-1'>
                                         {/* <input type='dropdown' value={startingFormDetails.category} placeholder='Couple' onChange={(e) => onFormUpdate('category', e.target.value)} /> */}
 
-                                        <select id="categories" name="categories" placeholder='Option 1' className='px-1'>
-                                        {/* value={startingFormDetails.option} */}
-                                            <option className='px-1' value="Couple" onChange={(e) => onFormUpdate('category', e.target.value)}>Couple</option>
+                                        <select id="categories" name="categories" placeholder={sessionStorage.getItem("Active Category")} className='px-1'>
+                                            {/* value={startingFormDetails.option} */}
+                                            <option value={sessionStorage.getItem("Active Category")} onChange={(e) => onFormUpdate('category', e.target.value)}>{sessionStorage.getItem("Active Category")}</option>
+                                            <option value="Couple" onChange={(e) => onFormUpdate('category', e.target.value)}>Couple</option>
                                             <option value="Portrait" onChange={(e) => onFormUpdate('category', e.target.value)}>Portrait</option>
                                             <option value="Family" onChange={(e) => onFormUpdate('category', e.target.value)}>Family</option>
                                             <option value="Friendship" onChange={(e) => onFormUpdate('category', e.target.value)}>Friendship</option>
@@ -99,7 +100,7 @@ export default function Contact() {
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
                                         <select id="options" name="options" placeholder='Option 1'>
-                                        {/* value={startingFormDetails.option} */}
+                                            {/* value={startingFormDetails.option} */}
                                             <option value="1" onChange={(e) => onFormUpdate('option', e.target.value)}>Option 1</option>
                                             <option value="2" onChange={(e) => onFormUpdate('option', e.target.value)}>Option 2</option>
                                             <option value="3" onChange={(e) => onFormUpdate('option', e.target.value)}>Option 3</option>
