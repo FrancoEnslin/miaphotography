@@ -18,13 +18,13 @@ export const Footer = () => {
           
           <Col size={12} sm={6}>
             {/* <img src={newLogo} alt="Logo" className="gifLogo" /> */}
-            <p >Copyright 2022. All Rights Reserved</p>
+            <p >Copyright 2023. Mia Schulenburg Photography. All Rights Reserved</p>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              {/* <a href="#"><img src={navIcon1} alt="Icon" /></a> */}
+              <a href="https://www.facebook.com/profile.php?id=100064307011848"><img src={navIcon2} alt="Icon" /></a>
+              <a href="https://instagram.com/miaschulenburg.photography?igshid=ZWQyN2ExYTkwZQ=="><img src={navIcon3} alt="Icon" /></a>
             </div>
          
           </Col>
