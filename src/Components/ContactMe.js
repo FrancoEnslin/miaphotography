@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import MiaPhoto from '../assets/Mia Photo.jpeg'
+import emailjs from 'emailjs-com'
 
 export default function Contact() {
 
@@ -21,6 +22,7 @@ export default function Contact() {
     }
 
     const [isMobile, setIsMobile] = useState(false);
+    const form = useRef();
 
     useEffect(() => {
         const handleResize = () => {
@@ -47,6 +49,23 @@ export default function Contact() {
         })
     }
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_sbxztqh', 'template_c2npxla', form.current, 'k8LxH255HHry4Id3K')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset();
+    };
+
+    function handleClick(){
+        alert("Thank you for getting in touch. I'll get back to you as soon as possible.")
+    }
+
     return (
         <div className='main-contact'>
             <section className='contact' id='Contact'>
@@ -63,7 +82,7 @@ export default function Contact() {
 
                         <Col xs={12} md={6} lg={6} xl={6}>
                             <h2>Get in touch</h2>
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
                                 <Row >
                                     <Col size={12} sm={6} className='px-1'>
                                         <input type='text' value={startingFormDetails.firstName} placeholder='John' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -109,7 +128,7 @@ export default function Contact() {
 
                                     <Col size={12} className="px-1">
                                         <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                                        <button type="submit" ><span>{buttonText}</span></button>
+                                        <button type="submit" onClick={handleClick}><span>{buttonText}</span></button>
                                     </Col>
                                     {
                                         status.message &&

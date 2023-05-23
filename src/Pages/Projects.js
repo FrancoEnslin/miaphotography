@@ -127,12 +127,14 @@ function Projects() {
         "Extra fees will be charged for locations further than 10km from Prinshof, Pretoria.",
         "If the location charges a fee for entrance, clients have to pay for it.",
         "If you are late for your shoot, we will still shoot the remainder of the time, but you will have to pay for the full session.",
+        "A Booked session can't be split into two seperate sessions. You will be charged for two seperate sessions if you split them.",
         "Photos will be received via an online gallery and pictures will only be available for 14 days before the link will expire.",
         "You will receive edited images only, no RAW images will be given.",
         "Photos will be delivered 2-4 weeks after the photoshoot",
         "I spend hours perfecting your photos so please do not edit over my photos, otherwise you will be asked to remove them.",
-        "@miaschulenburgphotography and www.miashulenbergphotohrapy.co.za has copyright over all images and has the right to use them for social media and promotion.",
-        "If I have to shoot over time, you will be charged R150 extra for each 30 minutes extra.",
+        "@miaschulenburgphotography and www.miaschulenburgphotography.netlify.app has copyright over all images and has the right to use them for social media and promotion.",
+        "You will be charged R350 for every half an hour you go over your shoot time",
+        "I am not available to do shoots on Sundays."
     ]
 
     return (
@@ -258,7 +260,7 @@ function Projects() {
                                         <div >
                                             <p>For the first 60 minutes</p>
                                             <p> R850 </p>
-                                            <p> For every extra hour, you will be charged R250</p>
+                                            <p> For every extra hour, you will be charged R400</p>
                                             <p> You will receive 70 edited photos</p>
                                             <p> additional 50 photos for every extra hour </p>
                                             <p> 120 edited photos</p>
@@ -541,7 +543,7 @@ function Projects() {
                                         <div style={{ marginLeft: "-50px", }}>
                                             <p>For the first 60 minutes</p>
                                             <p> R850 </p>
-                                            <p> Every extra hour is R250</p>
+                                            <p> Every extra hour is R400</p>
                                             <p> You will receive 70 edited photos.</p>
                                             <p> 50 photos for every extra hour </p>
                                             <p> 120 edited photos</p>

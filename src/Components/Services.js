@@ -13,6 +13,9 @@ import Image1 from '../assets/C&J-174.jpg';
 import Image2 from '../assets/K&C-37.jpg';
 import Image3 from '../assets/Q&T-26.jpg';
 
+//Engagemetn 
+import Engage1 from '../assets/Engagement/E&S-104.jpg'
+
 // Family
 import Family1 from '../assets/Family/SFam-31.jpg'
 import Family2 from '../assets/Family/SFam-209.jpg'
@@ -127,14 +130,14 @@ function Services() {
                             <Card className='Card' id='portrait'>
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <Card.Body> Portait shoot </Card.Body>
-                                        <Card.Img variant="top" src={Formal1} alt='Photo' />
+                                        <Card.Body> Engagement shoot </Card.Body>
+                                        <Card.Img variant="top" src={Engage1} alt='Photo' />
                                     </div>
                                     <div class="flip-card-back">
                                         <p> <b style={{ textDecoration: "bold" }}>Option 1</b></p>
                                         <p> 30 minute session </p>
-                                        <p>  70 edited photos </p>
-                                        <p>    R550
+                                        <p>  80 edited photos </p>
+                                        <p>    R750
                                         </p>
                                         <p> <b style={{ textDecoration: "bold" }}>Option 2</b></p>
                                         <p> See more...
