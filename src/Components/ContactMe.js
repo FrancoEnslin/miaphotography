@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import MiaPhoto from '../assets/Mia Photo.jpeg'
-import emailjs from 'emailjs-com'
+import emailjs, { send } from 'emailjs-com'
 
 export default function Contact() {
 
@@ -47,23 +47,48 @@ export default function Contact() {
             ...formDetails,
             [category]: value
         })
+
+        console.log("Form details are: ", formDetails)
     }
+
+    var templateParams = {
+        name: formDetails.name,
+        notes: formDetails.message
+    };
+     
+    // emailjs.send('service_qmmdkb2', 'template_xjnjthj', templateParams, 'CyWSmpcrtmuV34Ayz')
+    //     .then(function(response) {
+    //        console.log('SUCCESS!', response.status, response.text);
+    //     }, function(error) {
+    //        console.log('FAILED...', error);
+    //     });
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_sbxztqh', 'template_c2npxla', form.current, 'k8LxH255HHry4Id3K')
+        console.log('this is e: ',e)
+        console.log('this is form: ',form.current)
+
+        emailjs.sendForm('service_qmmdkb2', 'template_xjnjthj',form.current, 'CyWSmpcrtmuV34Ayz')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
 
-        e.target.reset();
+        // e.target.reset();
     };
 
     function handleClick(){
+        // send();
         alert("Thank you for getting in touch. I'll get back to you as soon as possible.")
+        onFormUpdate('firstName', "")
+        onFormUpdate('lastName', "")
+        onFormUpdate('email', "")
+        onFormUpdate('phone', "")
+        onFormUpdate('category', "")
+        onFormUpdate('option', "")
+        onFormUpdate('message', "")
     }
 
     return (
@@ -82,22 +107,23 @@ export default function Contact() {
 
                         <Col xs={12} md={6} lg={6} xl={6}>
                             <h2>Get in touch</h2>
-                            <form ref={form} onSubmit={sendEmail}>
+                            <form ref={form}  onSubmit={sendEmail}>
+                            {/* */}
                                 <Row >
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='text' value={startingFormDetails.firstName} placeholder='John' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                                        <input type='text' value={formDetails.firstName} placeholder='John' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
 
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='text' value={startingFormDetails.lastName} placeholder='Doe' onChange={(e) => onFormUpdate('lastName', e.target.value)} />
+                                        <input type='text' value={formDetails.lastName} placeholder='Doe' onChange={(e) => onFormUpdate('lastName', e.target.value)} />
 
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='email' value={startingFormDetails.email} placeholder='JohnDoe@email.com' onChange={(e) => onFormUpdate('email', e.target.value)} />
+                                        <input type='email' value={formDetails.email} placeholder='JohnDoe@email.com' onChange={(e) => onFormUpdate('email', e.target.value)} />
 
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='tel' value={startingFormDetails.phone} placeholder='086......' onChange={(e) => onFormUpdate('phone', e.target.value)} />
+                                        <input type='tel' value={formDetails.phone} placeholder='086......' onChange={(e) => onFormUpdate('phone', e.target.value)} />
                                     </Col>
 
                                     <Col size={12} sm={6} className='px-1'>
