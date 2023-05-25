@@ -8,7 +8,7 @@ function MyNavbar() {
     <div >
       <Navbar  expand="sm" >
       <Container>
-        <Navbar.Brand href="/">Mia Schulenberg Photography</Navbar.Brand>
+        <Navbar.Brand href="/">Mia Schulenburg Photography</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
