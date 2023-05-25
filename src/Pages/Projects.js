@@ -64,7 +64,7 @@ function Projects() {
         console.log('function: ', agreed)
         if (agreed) {
             sessionStorage.setItem("Active Category", category);
-            window.location.href = '/';
+            window.location = '/#Contact';
         }
         else {
             alert('Please agree to the terms and conditions.');

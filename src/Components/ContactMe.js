@@ -111,15 +111,15 @@ export default function Contact() {
                             {/* */}
                                 <Row >
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='text' value={formDetails.firstName} placeholder='John' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                                        <input name="firstName" type='text' value={formDetails.firstName} placeholder='John' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
 
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='text' value={formDetails.lastName} placeholder='Doe' onChange={(e) => onFormUpdate('lastName', e.target.value)} />
+                                        <input  name="lastName"type='text' value={formDetails.lastName} placeholder='Doe' onChange={(e) => onFormUpdate('lastName', e.target.value)} />
 
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
-                                        <input type='email' value={formDetails.email} placeholder='JohnDoe@email.com' onChange={(e) => onFormUpdate('email', e.target.value)} />
+                                        <input name='email' type='email' value={formDetails.email} placeholder='JohnDoe@email.com' onChange={(e) => onFormUpdate('email', e.target.value)} />
 
                                     </Col>
                                     <Col size={12} sm={6} className='px-1'>
@@ -153,7 +153,7 @@ export default function Contact() {
                                     </Col>
 
                                     <Col size={12} className="px-1">
-                                        <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                                        <textarea name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                                         <button type="submit" onClick={handleClick}><span>{buttonText}</span></button>
                                     </Col>
                                     {

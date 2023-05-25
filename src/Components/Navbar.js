@@ -21,11 +21,11 @@ function MyNavbar() {
               <NavDropdown.Item href="#friendship">Friendship Shoot</NavDropdown.Item>
               <NavDropdown.Item href="#portrait">Portrait Shoot</NavDropdown.Item>
               <NavDropdown.Item href="#formals">More...</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#contact">
+              <NavDropdown.Divider /> */}
+              <NavDropdown.Item href="/#Contact">
                 Contact Me
               </NavDropdown.Item>
-            </NavDropdown>
+            {/* </NavDropdown>
             <Nav.Link href='#faq'>FAQ</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
