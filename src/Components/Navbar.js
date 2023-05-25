@@ -22,9 +22,9 @@ function MyNavbar() {
               <NavDropdown.Item href="#portrait">Portrait Shoot</NavDropdown.Item>
               <NavDropdown.Item href="#formals">More...</NavDropdown.Item>
               <NavDropdown.Divider /> */}
-              <NavDropdown.Item href="/#Contact">
+              {/* <NavDropdown.Item href="/#Contact">
                 Contact Me
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             {/* </NavDropdown>
             <Nav.Link href='#faq'>FAQ</Nav.Link> */}
           </Nav>
