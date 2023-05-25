@@ -396,7 +396,7 @@ function Projects() {
 
                             <br />
                             <h4>Terms and Conditions</h4>
-                            <div className='d-flex  p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
+                            <div className='d-flex  p-2' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="column">
                                     <div className="col-md-12  ">
 
