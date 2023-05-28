@@ -21,6 +21,8 @@ import Event3 from '../assets/Events/Cara P 21 2-130.jpg'
 import Graduation1 from '../assets/Graduation/IMG_0817.JPG'
 import Graduation2 from '../assets/Graduation/IMG_0818.JPG'
 import Graduation3 from '../assets/Graduation/IMG_0819.JPG'
+import Graduation4 from '../assets/Graduation/E&G-100.jpg'
+
 
 //Couples
 import Couple1 from '../assets/Couples/Q&T-83.jpg'
@@ -140,7 +142,7 @@ function Projects() {
     return (
         <div>
             <MyNavbar />
-            <div className='container p-3'>
+            <div className='container p-1'>
                 <h2>Services and Packages I Offer</h2>
                 {
                     isMobile ?
@@ -340,7 +342,7 @@ function Projects() {
                             <div className='d-flex justify-content-center p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="row">
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Graduation1} alt='First Image' style={ImageMobileStyle} />
+                                        <img src={Graduation4} alt='First Image' style={ImageMobileStyle} />
                                     </div>
                                     <div className="col-md-5 d-flex justify-content-center align-items-center">
                                         <div >
@@ -638,7 +640,7 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="col-md-7 d-flex justify-content-center align-items-center">
-                                        <img src={Graduation1} alt='First Image' style={ImageRightStyle} />
+                                        <img src={Graduation4} alt='First Image' style={ImageRightStyle} />
                                     </div>
                                 </div>
                             </div>
@@ -676,9 +678,9 @@ function Projects() {
 
                             <br />
                             <h4>Terms and Conditions</h4>
-                            <div className='d-flex p-3' style={{ border: "1px solid", borderRadius: "10px" }}>
+                            <div className='d-flex p-4' style={{ border: "1px solid", borderRadius: "10px" }}>
                                 <div className="column">
-                                    <div className="col-md-12">
+                                    <div className="col-md-12"> 
                                         <ol>
                                             {
                                                 Terms.map((term) => {
