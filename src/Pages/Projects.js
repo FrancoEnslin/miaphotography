@@ -263,11 +263,8 @@ function Projects() {
                                             <p>For the first 60 minutes</p>
                                             <p> R850 </p>
                                             <p> For every extra hour, you will be charged R400</p>
-                                            <p> You will receive 70 edited photos</p>
+                                            <p> You will receive 70 edited photos for the first hour</p>
                                             <p> additional 50 photos for every extra hour </p>
-                                            <p> 120 edited photos</p>
-                                            <p> 4-6 people</p>
-                                            <p> R850  </p>
                                             <Button onClick={() => HandleBooking("Events")}>Book my Session</Button>
                                         </div>
                                     </div>
@@ -324,7 +321,7 @@ function Projects() {
                                             <p>   120 edited photos</p>
                                             <p>   4-6 people</p>
                                             <p>   R 1125  </p>
-                                            <p className='h5'>Option 2</p>
+                                            <p className='h5'>Option 3</p>
                                             <p>     90 minutes </p>
                                             <p>  150+ edited photos</p>
                                             <p>   7+ people</p>
@@ -546,15 +543,12 @@ function Projects() {
                                             <p>For the first 60 minutes</p>
                                             <p> R850 </p>
                                             <p> Every extra hour is R400</p>
-                                            <p> You will receive 70 edited photos.</p>
+                                            <p> You will receive 70 edited photos for the first hour</p>
                                             <p> 50 photos for every extra hour </p>
-                                            <p> 120 edited photos</p>
-                                            <p> 4-6 people</p>
-                                            <p> R850  </p>
                                             <Button onClick={() => HandleBooking("Events")}>Book my Session</Button>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                             </div>
 
                             <br />
@@ -608,7 +602,7 @@ function Projects() {
                                             <p>   120 edited photos</p>
                                             <p>   4-6 people</p>
                                             <p>   R 1125  </p>
-                                            <p className='h5'>Option 2</p>
+                                            <p className='h5'>Option 3</p>
                                             <p>     90 minutes </p>
                                             <p>  150+ edited photos</p>
                                             <p>   7+ people</p>
